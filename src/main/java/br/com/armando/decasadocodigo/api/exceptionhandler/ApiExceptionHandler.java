@@ -34,6 +34,7 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
         BindingResult bindingResult = ex.getBindingResult();
         List<CustomExceptionBody.Detail> invalidFields = bindingResult.getFieldErrors().stream()
                 .map(fieldError -> {
+                    // Message Source serve para viabilizar que a mensagem dos campos possam ser tratadas no arquivo messages.properties
                     String message = messageSource.getMessage(fieldError, LocaleContextHolder.getLocale());
                     return new CustomExceptionBody.Detail(fieldError.getField(), message);
                 }).collect(Collectors.toList());
