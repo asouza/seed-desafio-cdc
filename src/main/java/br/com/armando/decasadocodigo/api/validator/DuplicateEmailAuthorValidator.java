@@ -31,7 +31,7 @@ public class DuplicateEmailAuthorValidator implements Validator {
         AuthorRequest authorRequest = (AuthorRequest) target;
         Optional<Author> possibleAuthor = authorRepository.findByEmail(authorRequest.getEmail());
         if (possibleAuthor.isPresent()) {
-            errors.rejectValue("email", null, "O email informado já está vinculado a um author no sistema.");
+            errors.rejectValue("email", "Author.DuplicateEmail", "O email informado já está vinculado a um author no sistema.");
         }
     }
 
