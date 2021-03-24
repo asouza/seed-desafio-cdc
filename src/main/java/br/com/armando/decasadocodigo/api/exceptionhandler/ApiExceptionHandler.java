@@ -19,6 +19,8 @@ import java.util.stream.Collectors;
 @ControllerAdvice
 public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
 
+    private static final String MSG_ERROR_GENERIC = "Ocorreu um erro inesperado, por favor entre em contato com o administrador do sistema.";
+
     @Autowired
     private MessageSource messageSource;
 
@@ -43,4 +45,17 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
         return super.handleExceptionInternal(ex, body, headers, status, request);
     }
 
+    @Override
+    protected ResponseEntity<Object> handleExceptionInternal(Exception ex, Object body, HttpHeaders headers, HttpStatus status, WebRequest request) {
+        if (body == null) {
+            body = new CustomExceptionBody(
+                    status.value(),
+                    status.getReasonPhrase(),
+                    MSG_ERROR_GENERIC,
+                    OffsetDateTime.now()
+            );
+        }
+
+        return super.handleExceptionInternal(ex, body, headers, status, request);
+    }
 }
