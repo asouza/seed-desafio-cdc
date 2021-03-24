@@ -33,4 +33,9 @@ public class AuthorRequest {
         );
         return author;
     }
+
+    public String getEmail() {
+        return this.email;
+    }
+
 }

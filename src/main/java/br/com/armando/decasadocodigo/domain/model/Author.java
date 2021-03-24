@@ -16,7 +16,7 @@ public class Author {
     @Column(nullable = false)
     private String name;
 
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String email;
 
     @Column(nullable = false, columnDefinition = "TEXT")
@@ -25,6 +25,10 @@ public class Author {
     @CreationTimestamp
     @Column(nullable = false, columnDefinition = "datetime")
     private OffsetDateTime createdAt;
+
+    @Deprecated
+    public Author() {
+    }
 
     public Author(String name, String email, String description) {
         this.name = name;
@@ -42,4 +46,5 @@ public class Author {
                 ", createdAt=" + createdAt +
                 '}';
     }
+
 }
