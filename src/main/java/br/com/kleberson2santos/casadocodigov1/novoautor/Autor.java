@@ -16,10 +16,14 @@ public class Autor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private final String nome;
-    private final String email;
-    private final String descricao;
+    private String nome;
+    private String email;
+    private String descricao;
     private LocalDateTime instanteCriacao = LocalDateTime.now();
+
+    @Deprecated
+    public Autor(){
+    }
 
     public Autor(@NotBlank String nome, @NotBlank @Email String email, @NotBlank @Size(max = 400) String descricao) {
         Assert.hasLength(nome, "O nome é obrigatório");
