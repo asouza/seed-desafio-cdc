@@ -1,5 +1,6 @@
 package br.com.armando.decasadocodigo.api.model.request;
 
+import br.com.armando.decasadocodigo.api.validator.UniqueValue;
 import br.com.armando.decasadocodigo.domain.model.Author;
 
 import javax.validation.constraints.Email;
@@ -11,6 +12,7 @@ public class AuthorRequest {
     @NotBlank
     private String name;
 
+    @UniqueValue(domainClass = Author.class, fieldName = "email")
     @NotBlank
     @Email
     private String email;
