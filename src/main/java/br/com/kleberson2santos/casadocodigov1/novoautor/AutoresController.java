@@ -22,7 +22,7 @@ public class AutoresController {
     private ProibeEmailDuplicadoAutorValidator proibeEmailDuplicadoValidator;
 
     @InitBinder
-    public void init(WebDataBinder binder){
+    public void init(WebDataBinder binder) {
         binder.addValidators(proibeEmailDuplicadoValidator);
     }
 

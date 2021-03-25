@@ -20,14 +20,14 @@ public class ProibeEmailDuplicadoAutorValidator implements Validator {
 
     @Override
     public void validate(Object o, Errors errors) {
-        if(errors.hasErrors()){
+        if (errors.hasErrors()) {
             return;
         }
 
         NovoAutorRequest request = (NovoAutorRequest) o;
         Optional<Autor> possivelAutor = autorRepository.findByEmail(request.getEmail());
 
-        if(possivelAutor.isPresent()){
+        if (possivelAutor.isPresent()) {
             errors.rejectValue("email", null,
                     "Já existe um(a) outro(a) autor(a) com o mesmo email "
                             + request.getEmail());
