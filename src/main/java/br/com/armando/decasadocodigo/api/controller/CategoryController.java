@@ -1,6 +1,7 @@
 package br.com.armando.decasadocodigo.api.controller;
 
 import br.com.armando.decasadocodigo.api.model.request.CategoryRequest;
+import br.com.armando.decasadocodigo.api.model.response.CategoryResponse;
 import br.com.armando.decasadocodigo.domain.model.Category;
 import org.springframework.http.HttpStatus;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,10 +21,10 @@ public class CategoryController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     @Transactional
-    public String insert(@RequestBody @Valid CategoryRequest categoryRequest) {
+    public CategoryResponse insert(@RequestBody @Valid CategoryRequest categoryRequest) {
         Category category = categoryRequest.toModel();
         manager.persist(category);
-        return category.toString();
+        return new CategoryResponse(category);
     }
 
 }

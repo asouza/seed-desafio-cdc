@@ -1,6 +1,7 @@
 package br.com.armando.decasadocodigo.api.controller;
 
 import br.com.armando.decasadocodigo.api.model.request.BookRequest;
+import br.com.armando.decasadocodigo.api.model.response.BookResponse;
 import br.com.armando.decasadocodigo.domain.model.Book;
 import org.springframework.http.HttpStatus;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,10 +21,10 @@ public class BookController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     @Transactional
-    public String insert(@RequestBody @Valid BookRequest bookRequest) {
+    public BookResponse insert(@RequestBody @Valid BookRequest bookRequest) {
         Book book = bookRequest.toModel(manager);
         manager.persist(book);
-        return book.toString();
+        return new BookResponse(book);
     }
 
 }

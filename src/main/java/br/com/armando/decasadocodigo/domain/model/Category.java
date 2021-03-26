@@ -21,11 +21,12 @@ public class Category {
         this.name = name;
     }
 
-    @Override
-    public String toString() {
-        return "Category{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                '}';
+    public Long getId() {
+        return id;
     }
+
+    public String getName() {
+        return name;
+    }
+
 }

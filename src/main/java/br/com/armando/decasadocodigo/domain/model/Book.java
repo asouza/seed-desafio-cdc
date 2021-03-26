@@ -53,19 +53,44 @@ public class Book {
         this.author = author;
     }
 
-    @Override
-    public String toString() {
-        return "Book{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", summary='" + summary + '\'' +
-                ", index='" + index + '\'' +
-                ", price=" + price +
-                ", pages=" + pages +
-                ", isbn='" + isbn + '\'' +
-                ", publishDate=" + publishDate +
-                ", category=" + category +
-                ", author=" + author +
-                '}';
+    public Long getId() {
+        return id;
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getSummary() {
+        return summary;
+    }
+
+    public String getIndex() {
+        return index;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public Integer getPages() {
+        return pages;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public LocalDate getPublishDate() {
+        return publishDate;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public Author getAuthor() {
+        return author;
+    }
+
 }
