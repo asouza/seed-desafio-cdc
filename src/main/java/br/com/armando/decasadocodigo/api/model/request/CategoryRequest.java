@@ -13,7 +13,7 @@ public class CategoryRequest {
     private String name;
 
     @JsonCreator(mode = JsonCreator.Mode.PROPERTIES)
-    public CategoryRequest(String name) {
+    public CategoryRequest(@NotBlank @UniqueValue(domainClass = Category.class, fieldName = "name") String name) {
         this.name = name;
     }
 
