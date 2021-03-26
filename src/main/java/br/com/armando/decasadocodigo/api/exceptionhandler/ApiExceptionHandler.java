@@ -1,5 +1,6 @@
 package br.com.armando.decasadocodigo.api.exceptionhandler;
 
+import com.fasterxml.jackson.databind.JsonMappingException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;
@@ -58,4 +59,11 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
 
         return super.handleExceptionInternal(ex, body, headers, status, request);
     }
+
+    private String joinPath(List<JsonMappingException.Reference> references) {
+        return references.stream()
+                .map(ref -> ref.getFieldName())
+                .collect(Collectors.joining("."));
+    }
+
 }

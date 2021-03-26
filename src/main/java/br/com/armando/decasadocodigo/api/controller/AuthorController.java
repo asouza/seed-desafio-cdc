@@ -11,7 +11,7 @@ import javax.persistence.PersistenceContext;
 import javax.validation.Valid;
 
 @RestController
-@RequestMapping("/authors")
+@RequestMapping(value = "/authors")
 public class AuthorController {
 
     @PersistenceContext
