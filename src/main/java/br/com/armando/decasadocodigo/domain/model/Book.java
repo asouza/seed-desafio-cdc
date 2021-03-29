@@ -41,6 +41,10 @@ public class Book {
     @JoinColumn(name = "author_id", nullable = false)
     private Author author;
 
+    @Deprecated
+    public Book() {
+    }
+
     public Book(String title, String summary, String index, BigDecimal price, Integer pages, String isbn, LocalDate publishDate, Category category, Author author) {
         this.title = title;
         this.summary = summary;
