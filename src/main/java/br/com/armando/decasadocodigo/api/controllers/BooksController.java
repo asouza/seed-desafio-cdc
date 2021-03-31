@@ -1,4 +1,4 @@
-package br.com.armando.decasadocodigo.api.controller;
+package br.com.armando.decasadocodigo.api.controllers;
 
 import br.com.armando.decasadocodigo.api.model.request.BookRequest;
 import br.com.armando.decasadocodigo.api.model.response.BookResponse;
@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping(value = "/books")
-public class BookController {
+public class BooksController {
 
     @PersistenceContext
     private EntityManager manager;

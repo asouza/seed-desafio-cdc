@@ -1,4 +1,4 @@
-package br.com.armando.decasadocodigo.api.controller;
+package br.com.armando.decasadocodigo.api.controllers;
 
 import br.com.armando.decasadocodigo.api.model.request.AuthorRequest;
 import br.com.armando.decasadocodigo.api.model.response.AuthorResponse;
@@ -13,7 +13,7 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping(value = "/authors")
-public class AuthorController {
+public class AuthorsController {
 
     @PersistenceContext
     private EntityManager manager;

@@ -1,4 +1,4 @@
-package br.com.armando.decasadocodigo.api.controller;
+package br.com.armando.decasadocodigo.api.controllers;
 
 import br.com.armando.decasadocodigo.api.model.request.CategoryRequest;
 import br.com.armando.decasadocodigo.api.model.response.CategoryResponse;
@@ -13,7 +13,7 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping(value = "/categories")
-public class CategoryController {
+public class CategoriesController {
 
     @PersistenceContext
     private EntityManager manager;
