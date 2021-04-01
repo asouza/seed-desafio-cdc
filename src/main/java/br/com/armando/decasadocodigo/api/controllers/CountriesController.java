@@ -1,6 +1,7 @@
 package br.com.armando.decasadocodigo.api.controllers;
 
 import br.com.armando.decasadocodigo.api.model.request.CountryRequest;
+import br.com.armando.decasadocodigo.api.model.response.CountryResponse;
 import br.com.armando.decasadocodigo.domain.model.Country;
 import org.springframework.http.HttpStatus;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,10 +21,10 @@ public class CountriesController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     @Transactional
-    public Country insert(@RequestBody @Valid CountryRequest countryRequest) {
+    public CountryResponse insert(@RequestBody @Valid CountryRequest countryRequest) {
         Country country = new Country(countryRequest.getName());
         manager.persist(country);
-        return country;
+        return new CountryResponse(country);
     }
 
 }

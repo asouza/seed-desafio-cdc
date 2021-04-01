@@ -1,8 +1,6 @@
 package br.com.armando.decasadocodigo.api.model.response;
 
-import br.com.armando.decasadocodigo.domain.model.Author;
 import br.com.armando.decasadocodigo.domain.model.Book;
-import br.com.armando.decasadocodigo.domain.model.Category;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -17,8 +15,8 @@ public class BookResponse {
     private Integer pages;
     private String isbn;
     private LocalDate publishDate;
-    private Category category;
-    private Author author;
+    private CategoryResponse category;
+    private AuthorResponse author;
 
     public BookResponse(Book book) {
         this.id = book.getId();
@@ -29,8 +27,8 @@ public class BookResponse {
         this.pages = book.getPages();
         this.isbn = book.getIsbn();
         this.publishDate = book.getPublishDate();
-        this.category = book.getCategory();
-        this.author = book.getAuthor();
+        this.category = new CategoryResponse(book.getCategory());
+        this.author = new AuthorResponse(book.getAuthor());
     }
 
     public Long getId() {
@@ -65,11 +63,11 @@ public class BookResponse {
         return publishDate;
     }
 
-    public Category getCategory() {
+    public CategoryResponse getCategory() {
         return category;
     }
 
-    public Author getAuthor() {
+    public AuthorResponse getAuthor() {
         return author;
     }
 }

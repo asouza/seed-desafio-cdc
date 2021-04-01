@@ -2,6 +2,7 @@ package br.com.armando.decasadocodigo.api.controllers;
 
 import br.com.armando.decasadocodigo.api.exceptionhandler.CustomExceptionBody;
 import br.com.armando.decasadocodigo.api.model.request.StateRequest;
+import br.com.armando.decasadocodigo.api.model.response.StateResponse;
 import br.com.armando.decasadocodigo.domain.model.State;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -35,7 +36,7 @@ public class StatesController {
         );
         State state = stateRequest.toModel(manager);
         manager.persist(state);
-        return ResponseEntity.created(URI.create("/state/" + state.getId())).body(state);
+        return ResponseEntity.created(URI.create("/state/" + state.getId())).body(new StateResponse(state));
     }
 
     private Boolean existsInCountry(StateRequest request) {
