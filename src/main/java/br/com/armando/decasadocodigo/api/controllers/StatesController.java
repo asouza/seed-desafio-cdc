@@ -1,6 +1,6 @@
 package br.com.armando.decasadocodigo.api.controllers;
 
-import br.com.armando.decasadocodigo.api.exceptionhandler.CustomExceptionBody;
+import br.com.armando.decasadocodigo.api.exceptionhandler.CustomErrorResponseBody;
 import br.com.armando.decasadocodigo.api.model.request.StateRequest;
 import br.com.armando.decasadocodigo.api.model.response.StateResponse;
 import br.com.armando.decasadocodigo.domain.model.State;
@@ -27,7 +27,7 @@ public class StatesController {
     @Transactional
     public ResponseEntity<?> insert(@RequestBody @Valid StateRequest stateRequest) {
         if (existsInCountry(stateRequest)) return ResponseEntity.badRequest().body(
-                new CustomExceptionBody(
+                new CustomErrorResponseBody(
                         HttpStatus.BAD_REQUEST.value(),
                         HttpStatus.BAD_REQUEST.getReasonPhrase(),
                         "Já existe um Estado com esse nome no País informado",

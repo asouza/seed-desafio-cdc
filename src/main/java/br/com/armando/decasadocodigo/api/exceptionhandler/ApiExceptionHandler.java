@@ -27,7 +27,7 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
 
     @Override
     protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex, HttpHeaders headers, HttpStatus status, WebRequest request) {
-        CustomExceptionBody body = new CustomExceptionBody(
+        CustomErrorResponseBody body = new CustomErrorResponseBody(
                 status.value(),
                 status.getReasonPhrase(),
                 "Um ou mais campos de entrada estão inválidos, verifique o preenchimento e tente novamente.",
@@ -35,11 +35,11 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
         );
 
         BindingResult bindingResult = ex.getBindingResult();
-        List<CustomExceptionBody.Detail> invalidFields = bindingResult.getFieldErrors().stream()
+        List<CustomErrorResponseBody.Detail> invalidFields = bindingResult.getFieldErrors().stream()
                 .map(fieldError -> {
                     // Message Source serve para viabilizar que a mensagem dos campos possam ser tratadas no arquivo messages.properties
                     String message = messageSource.getMessage(fieldError, LocaleContextHolder.getLocale());
-                    return new CustomExceptionBody.Detail(fieldError.getField(), message);
+                    return new CustomErrorResponseBody.Detail(fieldError.getField(), message);
                 }).collect(Collectors.toList());
         body.setDetails(invalidFields);
 
@@ -49,7 +49,7 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
     @Override
     protected ResponseEntity<Object> handleExceptionInternal(Exception ex, Object body, HttpHeaders headers, HttpStatus status, WebRequest request) {
         if (body == null) {
-            body = new CustomExceptionBody(
+            body = new CustomErrorResponseBody(
                     status.value(),
                     status.getReasonPhrase(),
                     MSG_ERROR_GENERIC,

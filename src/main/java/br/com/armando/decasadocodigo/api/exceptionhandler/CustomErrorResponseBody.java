@@ -7,7 +7,7 @@ import java.time.OffsetDateTime;
 import java.util.List;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class CustomExceptionBody {
+public class CustomErrorResponseBody {
 
     private Integer status;
     private String error;
@@ -15,7 +15,7 @@ public class CustomExceptionBody {
     private OffsetDateTime timestamp;
     private List<Detail> details;
 
-    public CustomExceptionBody(Integer status, String error, @Nullable String message, OffsetDateTime timestamp) {
+    public CustomErrorResponseBody(Integer status, String error, @Nullable String message, OffsetDateTime timestamp) {
         this.status = status;
         this.error = error;
         this.message = message;
