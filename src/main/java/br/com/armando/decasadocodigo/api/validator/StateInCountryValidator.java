@@ -1,6 +1,6 @@
 package br.com.armando.decasadocodigo.api.validator;
 
-import br.com.armando.decasadocodigo.api.model.request.OrderRequest;
+import br.com.armando.decasadocodigo.api.model.request.PurchaseRequest;
 import br.com.armando.decasadocodigo.domain.model.Country;
 import br.com.armando.decasadocodigo.domain.model.State;
 import org.springframework.stereotype.Component;
@@ -18,14 +18,14 @@ public class StateInCountryValidator implements Validator {
 
     @Override
     public boolean supports(Class<?> aClass) {
-        return OrderRequest.class.isAssignableFrom(aClass);
+        return PurchaseRequest.class.isAssignableFrom(aClass);
     }
 
     @Override
     public void validate(Object target, Errors errors) {
         if (errors.hasErrors()) return;
 
-        OrderRequest request = (OrderRequest) target;
+        PurchaseRequest request = (PurchaseRequest) target;
         Country country = manager.find(Country.class, request.getCountryId());
         if (!country.hasAnyState() && request.getStateId() == null) return;
 
