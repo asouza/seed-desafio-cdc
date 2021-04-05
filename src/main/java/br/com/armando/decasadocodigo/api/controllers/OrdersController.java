@@ -1,7 +1,6 @@
 package br.com.armando.decasadocodigo.api.controllers;
 
 import br.com.armando.decasadocodigo.api.model.request.OrderRequest;
-import br.com.armando.decasadocodigo.api.validator.CpfOrCnpjValidator;
 import br.com.armando.decasadocodigo.api.validator.StateInCountryValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,7 +18,6 @@ public class OrdersController {
 
     @InitBinder
     public void init(WebDataBinder binder) {
-        binder.addValidators(new CpfOrCnpjValidator());
         binder.addValidators(stateInCountryValidator);
     }
 
