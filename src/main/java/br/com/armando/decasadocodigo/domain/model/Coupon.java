@@ -20,6 +20,10 @@ public class Coupon {
     @Column(nullable = false)
     private LocalDate expiresAt;
 
+    @Deprecated
+    public Coupon() {
+    }
+
     public Coupon(String code, Integer percentage, LocalDate expiresAt) {
         this.code = code;
         this.percentage = percentage;
@@ -41,4 +45,9 @@ public class Coupon {
     public LocalDate getExpiresAt() {
         return expiresAt;
     }
+
+    public boolean isExpired() {
+        return LocalDate.now().compareTo(expiresAt) > 0;
+    }
+
 }

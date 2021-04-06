@@ -48,6 +48,9 @@ public class Purchase {
     @OneToOne(mappedBy = "purchase", cascade = CascadeType.PERSIST)
     private Order order;
 
+    @Embedded
+    private AppliedCoupon appliedCoupon;
+
     @Deprecated
     public Purchase() {
     }
@@ -124,9 +127,19 @@ public class Purchase {
         return order;
     }
 
+    public AppliedCoupon getAppliedCoupon() {
+        return appliedCoupon;
+    }
+
     public void setState(State state) {
         Assert.isTrue(state.belongsToCountry(country), "Esse estado não está associado com o País informado na Compra.");
         this.state = state;
     }
 
+    public void applyCoupon(Coupon coupon) {
+        Assert.notNull(coupon, "Não é possível aplicar um cupom nulo.");
+        Assert.isTrue(!coupon.isExpired(), "O cupom aplicado está expírado.");
+        Assert.isNull(appliedCoupon, "Não é permitido trocar o cupom de uma compra");
+        this.appliedCoupon = new AppliedCoupon(coupon);
+    }
 }

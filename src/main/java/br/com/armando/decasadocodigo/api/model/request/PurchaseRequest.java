@@ -2,10 +2,9 @@ package br.com.armando.decasadocodigo.api.model.request;
 
 import br.com.armando.decasadocodigo.api.validator.Document;
 import br.com.armando.decasadocodigo.api.validator.ExistsId;
-import br.com.armando.decasadocodigo.domain.model.Country;
-import br.com.armando.decasadocodigo.domain.model.Order;
-import br.com.armando.decasadocodigo.domain.model.Purchase;
-import br.com.armando.decasadocodigo.domain.model.State;
+import br.com.armando.decasadocodigo.domain.model.*;
+import br.com.armando.decasadocodigo.domain.repository.CouponRepository;
+import org.springframework.util.StringUtils;
 
 import javax.persistence.EntityManager;
 import javax.validation.Valid;
@@ -53,6 +52,8 @@ public class PurchaseRequest {
     @NotNull
     private OrderRequest order;
 
+    private String couponCode;
+
     public PurchaseRequest(
             @NotBlank @Email String email,
             @NotBlank String name,
@@ -64,7 +65,9 @@ public class PurchaseRequest {
             @ExistsId(domainClass = State.class, fieldName = "stateId") Long stateId,
             @NotBlank String phone,
             @NotBlank String cep,
-            @Valid @NotNull OrderRequest order) {
+            @Valid @NotNull OrderRequest order,
+            String couponCode
+            ) {
         this.email = email;
         this.name = name;
         this.lastName = lastName;
@@ -76,6 +79,7 @@ public class PurchaseRequest {
         this.phone = phone;
         this.cep = cep;
         this.order = order;
+        this.couponCode = couponCode;
     }
 
     public String getDocument() {
@@ -94,7 +98,11 @@ public class PurchaseRequest {
         return order;
     }
 
-    public Purchase toModel(EntityManager manager) {
+    public String getCouponCode() {
+        return couponCode;
+    }
+
+    public Purchase toModel(EntityManager manager, CouponRepository couponRepository) {
         @NotNull Country country = manager.find(Country.class, countryId);
         Function<Purchase, Order> orderCreationFunction = this.order.toModel(manager);
         Purchase purchase = new Purchase(email, name, lastName, document, address, complement, country, phone, cep, orderCreationFunction);
@@ -102,6 +110,15 @@ public class PurchaseRequest {
             State state = manager.find(State.class, stateId);
             purchase.setState(state);
         }
+        if (hasCouponCode()) {
+            Coupon coupon = couponRepository.getByCode(couponCode);
+            purchase.applyCoupon(coupon);
+        }
         return purchase;
     }
+
+    public Boolean hasCouponCode() {
+        return StringUtils.hasText(couponCode);
+    }
+
 }

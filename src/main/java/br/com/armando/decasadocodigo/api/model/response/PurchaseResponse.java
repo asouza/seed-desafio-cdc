@@ -16,6 +16,7 @@ public class PurchaseResponse {
     private String phone;
     private String cep;
     private PurchaseOrderResponse order;
+    private AppliedCouponResponse appliedCoupon;
 
     public PurchaseResponse(Purchase purchase) {
         this.id = purchase.getId();
@@ -30,6 +31,7 @@ public class PurchaseResponse {
         this.phone = purchase.getPhone();
         this.cep = purchase.getCep();
         this.order = new PurchaseOrderResponse(purchase.getOrder());
+        if (purchase.getAppliedCoupon() != null) this.appliedCoupon = new AppliedCouponResponse(purchase.getAppliedCoupon());
     }
 
     public Long getId() {
@@ -78,5 +80,9 @@ public class PurchaseResponse {
 
     public PurchaseOrderResponse getOrder() {
         return order;
+    }
+
+    public AppliedCouponResponse getAppliedCoupon() {
+        return appliedCoupon;
     }
 }

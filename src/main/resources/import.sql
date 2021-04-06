@@ -12,3 +12,5 @@ INSERT INTO tb_country (name) VALUES ('Brasil');
 INSERT INTO tb_country (name) VALUES ('Australia');
 INSERT INTO tb_country (name) VALUES ('Venezuela');
 
+INSERT INTO tb_state (name, country_id) VALUES ('Minas Gerais', 1);
+
