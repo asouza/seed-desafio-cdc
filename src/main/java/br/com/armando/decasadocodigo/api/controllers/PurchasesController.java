@@ -11,6 +11,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -43,6 +44,14 @@ public class PurchasesController {
     public PurchaseResponse insert(@RequestBody @Valid PurchaseRequest purchaseRequest) {
         Purchase purchase = purchaseRequest.toModel(manager, couponRepository);
         manager.persist(purchase);
+        return new PurchaseResponse(purchase);
+    }
+
+    @GetMapping("/{purchaseId}")
+    @ResponseStatus(HttpStatus.OK)
+    public PurchaseResponse findById(@PathVariable Long purchaseId) {
+        Purchase purchase = manager.find(Purchase.class, purchaseId);
+        if (purchase == null) throw new ResponseStatusException(HttpStatus.NOT_FOUND);
         return new PurchaseResponse(purchase);
     }
 

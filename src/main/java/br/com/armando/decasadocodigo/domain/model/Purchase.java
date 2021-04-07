@@ -3,6 +3,7 @@ package br.com.armando.decasadocodigo.domain.model;
 import org.springframework.util.Assert;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 import java.util.function.Function;
 
 @Entity
@@ -141,5 +142,15 @@ public class Purchase {
         Assert.isTrue(!coupon.isExpired(), "O cupom aplicado está expírado.");
         Assert.isNull(appliedCoupon, "Não é permitido trocar o cupom de uma compra");
         this.appliedCoupon = new AppliedCoupon(coupon);
+    }
+
+    public BigDecimal getTotal() {
+        BigDecimal orderTotal = order.calculateTotal();
+        if (appliedCoupon != null) {
+            BigDecimal percentage = new BigDecimal(appliedCoupon.getPercentage()).divide(new BigDecimal(100));
+            return orderTotal.subtract(orderTotal.multiply(percentage));
+        }
+
+        return orderTotal;
     }
 }

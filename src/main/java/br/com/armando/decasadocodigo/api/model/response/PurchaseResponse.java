@@ -2,6 +2,8 @@ package br.com.armando.decasadocodigo.api.model.response;
 
 import br.com.armando.decasadocodigo.domain.model.Purchase;
 
+import java.math.BigDecimal;
+
 public class PurchaseResponse {
 
     private Long id;
@@ -17,6 +19,8 @@ public class PurchaseResponse {
     private String cep;
     private PurchaseOrderResponse order;
     private AppliedCouponResponse appliedCoupon;
+    private Boolean appliedCouponExists;
+    private BigDecimal total;
 
     public PurchaseResponse(Purchase purchase) {
         this.id = purchase.getId();
@@ -32,6 +36,8 @@ public class PurchaseResponse {
         this.cep = purchase.getCep();
         this.order = new PurchaseOrderResponse(purchase.getOrder());
         if (purchase.getAppliedCoupon() != null) this.appliedCoupon = new AppliedCouponResponse(purchase.getAppliedCoupon());
+        this.appliedCouponExists = appliedCoupon != null;
+        this.total = purchase.getTotal();
     }
 
     public Long getId() {
@@ -85,4 +91,13 @@ public class PurchaseResponse {
     public AppliedCouponResponse getAppliedCoupon() {
         return appliedCoupon;
     }
+
+    public Boolean getAppliedCouponExists() {
+        return appliedCouponExists;
+    }
+
+    public BigDecimal getTotal() {
+      return total;
+    }
+
 }
