@@ -1,5 +1,7 @@
 package br.com.armando.decasadocodigo.domain.model;
 
+import org.springframework.util.Assert;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 
@@ -25,6 +27,10 @@ public class Coupon {
     }
 
     public Coupon(String code, Integer percentage, LocalDate expiresAt) {
+        Assert.isTrue(
+                expiresAt.compareTo(LocalDate.now()) >= 0,
+                "A data de expiração deve ser maior ou igual a data atual"
+        );
         this.code = code;
         this.percentage = percentage;
         this.expiresAt = expiresAt;

@@ -2,6 +2,7 @@ package br.com.armando.decasadocodigo.api.model.request;
 
 import br.com.armando.decasadocodigo.api.validator.UniqueValue;
 import br.com.armando.decasadocodigo.domain.model.Coupon;
+import org.springframework.util.Assert;
 
 import javax.validation.constraints.Future;
 import javax.validation.constraints.NotBlank;
