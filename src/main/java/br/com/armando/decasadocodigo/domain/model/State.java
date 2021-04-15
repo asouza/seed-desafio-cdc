@@ -39,6 +39,6 @@ public class State {
     }
 
     public boolean belongsToCountry(Country country) {
-        return this.country.getId() == country.getId();
+        return this.country.equals(country);
     }
 }
