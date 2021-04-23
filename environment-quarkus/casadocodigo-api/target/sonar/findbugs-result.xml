@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.2.0" sequence="0" timestamp="1616774630908" analysisTimestamp="1616781508881" release="">
+  <Project>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\configs\MyObjectMapperCustomizer.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\domain\AutorVO.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\domain\CategoriaVO.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\domain\CompraVO.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\domain\CupomApliadoVO.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\domain\CupomVO.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\domain\EstadoVO.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\domain\ItemPedidoVO.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\domain\LivroVO.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\domain\PaisVO.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\domain\PedidoVO.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\form\AutorRequestForm.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\form\CategoriaRequestForm.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\form\CompraRequestForm.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\form\CupomRequestForm.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\form\CupomUnico.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\form\EstadoRequestForm.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\form\ItemRequestForm.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\form\LivroRequestForm.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\form\PaisRequestForm.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\form\PedidoRequestForm.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\handlers\ErrorResponse.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\model\Autor.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\model\Categoria.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\model\Compra.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\model\Cupom.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\model\CupomApliado.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\model\Estado.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\model\ItemPedido.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\model\Livro.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\model\Pais.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\model\Pedido.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\providers\ArithmeticExceptionMapper.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\resources\AutorResource.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\resources\CategoriaResource.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\resources\CompraResource.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\resources\CupomResource.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\resources\EstadoResource.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\resources\LivroResource.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\resources\PaisResource.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\AutorValido.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\AutorValido$List.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\AutorValidoValidation.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\CPFouCNPJ.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\CPFouCNPJ$List.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\CategoriaUnica.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\CategoriaUnica$List.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\CategoriaUnicaValitation.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\CategoriaValido.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\CategoriaValido$List.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\CategoriaValidoValidation.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\CupomValido.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\CupomValido$List.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\CupomValidoValidation.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\EmailAutor.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\EmailAutor$List.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\EmailAutorValidation.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\EstadoPertenceAPais.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\EstadoPertenceAPais$List.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\EstadoPertenceAPaisValidator.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\EstadoUnico.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\EstadoUnico$List.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\EstadoUnicoValidation.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\EstadoValido.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\EstadoValido$List.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\EstadoValidoValidation.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\ISBNUnico.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\ISBNUnico$List.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\ISBNUnicoValidation.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\LivroValido.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\LivroValido$List.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\LivroValidoValidation.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\PaisUnico.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\PaisUnico$List.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\PaisUnicoValitation.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\PaisValido.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\PaisValido$List.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\PaisValidoValidation.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\TituloLivroUnico.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\TituloLivroUnico$List.class</Jar>
+    <Jar>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes\com\dev\eficiente\casadocodigo\validations\TituloLivroUnicoValidation.class</Jar>
+    <AuxClasspathEntry>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\classes</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk-15\lib\jrt-fs.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-hibernate-orm\1.12.1.Final\quarkus-hibernate-orm-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-core\1.12.1.Final\quarkus-core-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\jakarta\enterprise\jakarta.enterprise.cdi-api\2.0.2\jakarta.enterprise.cdi-api-2.0.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\jakarta\el\jakarta.el-api\3.0.3\jakarta.el-api-3.0.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\jakarta\interceptor\jakarta.interceptor-api\1.2.5\jakarta.interceptor-api-1.2.5.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\jakarta\inject\jakarta.inject-api\1.0\jakarta.inject-api-1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-ide-launcher\1.12.1.Final\quarkus-ide-launcher-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-development-mode-spi\1.12.1.Final\quarkus-development-mode-spi-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\smallrye\config\smallrye-config\1.10.2\smallrye-config-1.10.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\smallrye\common\smallrye-common-annotation\1.5.0\smallrye-common-annotation-1.5.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\smallrye\config\smallrye-config-common\1.10.2\smallrye-config-common-1.10.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\eclipse\microprofile\config\microprofile-config-api\1.4\microprofile-config-api-1.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\smallrye\common\smallrye-common-expression\1.5.0\smallrye-common-expression-1.5.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\smallrye\common\smallrye-common-function\1.5.0\smallrye-common-function-1.5.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\smallrye\common\smallrye-common-constraint\1.5.0\smallrye-common-constraint-1.5.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\smallrye\common\smallrye-common-classloader\1.5.0\smallrye-common-classloader-1.5.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\jboss\logging\jboss-logging\3.4.1.Final\jboss-logging-3.4.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\jboss\logmanager\jboss-logmanager-embedded\1.0.6\jboss-logmanager-embedded-1.0.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\jboss\logging\jboss-logging-annotations\2.2.0.Final\jboss-logging-annotations-2.2.0.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\jboss\threads\jboss-threads\3.2.0.Final\jboss-threads-3.2.0.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\jboss\slf4j\slf4j-jboss-logmanager\1.1.0.Final\slf4j-jboss-logmanager-1.1.0.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\graalvm\sdk\graal-sdk\21.0.0\graal-sdk-21.0.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\wildfly\common\wildfly-common\1.5.4.Final-format-001\wildfly-common-1.5.4.Final-format-001.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-bootstrap-runner\1.12.1.Final\quarkus-bootstrap-runner-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-agroal\1.12.1.Final\quarkus-agroal-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-datasource\1.12.1.Final\quarkus-datasource-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-datasource-common\1.12.1.Final\quarkus-datasource-common-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\jboss\narayana\jta\narayana-jta\5.10.6.Final\narayana-jta-5.10.6.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\jboss\jboss-transaction-spi\7.6.0.Final\jboss-transaction-spi-7.6.0.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\jboss\spec\javax\resource\jboss-connector-api_1.7_spec\1.0.0.Final\jboss-connector-api_1.7_spec-1.0.0.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\jboss\narayana\jts\narayana-jts-integration\5.10.6.Final\narayana-jts-integration-5.10.6.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\agroal\agroal-api\1.9\agroal-api-1.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\agroal\agroal-narayana\1.9\agroal-narayana-1.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\agroal\agroal-pool\1.9\agroal-pool-1.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-credentials\1.12.1.Final\quarkus-credentials-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-narayana-jta\1.12.1.Final\quarkus-narayana-jta-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-mutiny\1.12.1.Final\quarkus-mutiny-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\smallrye\reactive\mutiny\0.13.0\mutiny-0.13.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-smallrye-context-propagation\1.12.1.Final\quarkus-smallrye-context-propagation-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\smallrye\smallrye-context-propagation\1.1.0\smallrye-context-propagation-1.1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\smallrye\smallrye-context-propagation-api\1.1.0\smallrye-context-propagation-api-1.1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\smallrye\smallrye-context-propagation-storage\1.1.0\smallrye-context-propagation-storage-1.1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\smallrye\reactive\mutiny-context-propagation\0.13.0\mutiny-context-propagation-0.13.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\smallrye\smallrye-context-propagation-jta\1.1.0\smallrye-context-propagation-jta-1.1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\smallrye\reactive\smallrye-reactive-converter-api\1.4.0\smallrye-reactive-converter-api-1.4.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\smallrye\reactive\smallrye-reactive-converter-mutiny\1.4.0\smallrye-reactive-converter-mutiny-1.4.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\hibernate\hibernate-core\5.4.28.Final\hibernate-core-5.4.28.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\net\bytebuddy\byte-buddy\1.10.17\byte-buddy-1.10.17.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\jboss\jandex\2.2.3.Final\jandex-2.2.3.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\dom4j\dom4j\2.1.3\dom4j-2.1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\hibernate\hibernate-graalvm\5.4.28.Final\hibernate-graalvm-5.4.28.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.3-b02\jaxb-runtime-2.3.3-b02.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\glassfish\jaxb\txw2\2.3.3-b02\txw2-2.3.3-b02.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.10\istack-commons-runtime-3.0.10.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\com\sun\activation\jakarta.activation\1.2.1\jakarta.activation-1.2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\jboss\spec\javax\xml\bind\jboss-jaxb-api_2.3_spec\2.0.0.Final\jboss-jaxb-api_2.3_spec-2.0.0.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\jakarta\persistence\jakarta.persistence-api\2.2.3\jakarta.persistence-api-2.2.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\jakarta\transaction\jakarta.transaction-api\1.3.3\jakarta.transaction-api-1.3.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\hibernate\quarkus-local-cache\0.1.0\quarkus-local-cache-0.1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\com\github\ben-manes\caffeine\caffeine\2.8.8\caffeine-2.8.8.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\com\google\errorprone\error_prone_annotations\2.2.0\error_prone_annotations-2.2.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-caffeine\1.12.1.Final\quarkus-caffeine-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-hibernate-validator\1.12.1.Final\quarkus-hibernate-validator-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\hibernate\validator\hibernate-validator\6.2.0.Final\hibernate-validator-6.2.0.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\jakarta\validation\jakarta.validation-api\2.0.2\jakarta.validation-api-2.0.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\glassfish\jakarta.el\3.0.3\jakarta.el-3.0.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-hibernate-orm-panache\1.12.1.Final\quarkus-hibernate-orm-panache-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-hibernate-orm-panache-common\1.12.1.Final\quarkus-hibernate-orm-panache-common-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-panache-hibernate-common\1.12.1.Final\quarkus-panache-hibernate-common-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-panache-common\1.12.1.Final\quarkus-panache-common-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-resteasy\1.12.1.Final\quarkus-resteasy-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-vertx-http\1.12.1.Final\quarkus-vertx-http-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-security-runtime-spi\1.12.1.Final\quarkus-security-runtime-spi-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-vertx-http-dev-console-runtime-spi\1.12.1.Final\quarkus-vertx-http-dev-console-runtime-spi-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\security\quarkus-security\1.1.3.Final\quarkus-security-1.1.3.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-vertx-core\1.12.1.Final\quarkus-vertx-core-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-netty\1.12.1.Final\quarkus-netty-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\netty\netty-codec\4.1.49.Final\netty-codec-4.1.49.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\netty\netty-handler\4.1.49.Final\netty-handler-4.1.49.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\vertx\vertx-core\3.9.5\vertx-core-3.9.5.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\netty\netty-common\4.1.49.Final\netty-common-4.1.49.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\netty\netty-buffer\4.1.49.Final\netty-buffer-4.1.49.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\netty\netty-transport\4.1.49.Final\netty-transport-4.1.49.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\netty\netty-handler-proxy\4.1.49.Final\netty-handler-proxy-4.1.49.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\netty\netty-codec-socks\4.1.49.Final\netty-codec-socks-4.1.49.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\netty\netty-codec-http\4.1.49.Final\netty-codec-http-4.1.49.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\netty\netty-codec-http2\4.1.49.Final\netty-codec-http2-4.1.49.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\netty\netty-resolver\4.1.49.Final\netty-resolver-4.1.49.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\netty\netty-resolver-dns\4.1.49.Final\netty-resolver-dns-4.1.49.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\netty\netty-codec-dns\4.1.49.Final\netty-codec-dns-4.1.49.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\vertx\vertx-web\3.9.5\vertx-web-3.9.5.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\vertx\vertx-web-common\3.9.5\vertx-web-common-3.9.5.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\vertx\vertx-auth-common\3.9.5\vertx-auth-common-3.9.5.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\vertx\vertx-bridge-common\3.9.5\vertx-bridge-common-3.9.5.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-resteasy-server-common\1.12.1.Final\quarkus-resteasy-server-common-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-resteasy-common\1.12.1.Final\quarkus-resteasy-common-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\jboss\resteasy\resteasy-core\4.5.9.Final\resteasy-core-4.5.9.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\jboss\spec\javax\ws\rs\jboss-jaxrs-api_2.1_spec\2.0.1.Final\jboss-jaxrs-api_2.1_spec-2.0.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\jboss\resteasy\resteasy-core-spi\4.5.9.Final\resteasy-core-spi-4.5.9.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\com\ibm\async\asyncutil\0.1.0\asyncutil-0.1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-resteasy-jackson\1.12.1.Final\quarkus-resteasy-jackson-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-jackson\1.12.1.Final\quarkus-jackson-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.1\jackson-databind-2.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.12.1\jackson-datatype-jsr310-2.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.12.1\jackson-datatype-jdk8-2.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.12.1\jackson-module-parameter-names-2.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\jboss\resteasy\resteasy-jackson2-provider\4.5.9.Final\resteasy-jackson2-provider-4.5.9.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\jboss\resteasy\resteasy-jaxb-provider\4.5.9.Final\resteasy-jaxb-provider-4.5.9.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.1\jackson-core-2.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.1\jackson-annotations-2.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\com\fasterxml\jackson\jaxrs\jackson-jaxrs-json-provider\2.12.1\jackson-jaxrs-json-provider-2.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\com\fasterxml\jackson\jaxrs\jackson-jaxrs-base\2.12.1\jackson-jaxrs-base-2.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\com\fasterxml\jackson\module\jackson-module-jaxb-annotations\2.12.1\jackson-module-jaxb-annotations-2.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\com\github\java-json-tools\json-patch\1.13\json-patch-1.13.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-jdbc-postgresql\1.12.1.Final\quarkus-jdbc-postgresql-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\postgresql\postgresql\42.2.18\postgresql-42.2.18.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\quarkus-arc\1.12.1.Final\quarkus-arc-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\quarkus\arc\arc\1.12.1.Final\arc-1.12.1.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\eclipse\microprofile\context-propagation\microprofile-context-propagation-api\1.0.1\microprofile-context-propagation-api-1.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\jboss\logmanager\log4j2-jboss-logmanager\1.0.0.Beta1\log4j2-jboss-logmanager-1.0.0.Beta1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\io\smallrye\common\smallrye-common-io\1.5.0\smallrye-common-io-1.5.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Valdir Junior\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\sonar\findbugs\annotations.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\sonar\findbugs\jsr305.jar</AuxClasspathEntry>
+    <WrkDir>C:\develop\workspaces\repositorios\seed-desafio-cdc\environment-quarkus\casadocodigo-api\target\sonar</WrkDir>
+  </Project>
+  <BugInstance type="USBR_UNNECESSARY_STORE_BEFORE_RETURN" priority="2" rank="17" abbrev="USBR" category="STYLE" instanceHash="1f50e6fb2fbf69674580320c4af79343" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method stores return result in local before immediately returning it</ShortMessage>
+    <LongMessage>Method com.dev.eficiente.casadocodigo.domain.AutorVO.hashCode() stores return result in local before immediately returning it</LongMessage>
+    <Class classname="com.dev.eficiente.casadocodigo.domain.AutorVO" primary="true">
+      <SourceLine classname="com.dev.eficiente.casadocodigo.domain.AutorVO" start="7" end="92" sourcefile="AutorVO.java" sourcepath="com/dev/eficiente/casadocodigo/domain/AutorVO.java">
+        <Message>At AutorVO.java:[lines 7-92]</Message>
+      </SourceLine>
+      <Message>In class com.dev.eficiente.casadocodigo.domain.AutorVO</Message>
+    </Class>
+    <Method classname="com.dev.eficiente.casadocodigo.domain.AutorVO" name="hashCode" signature="()I" isStatic="false" primary="true">
+      <SourceLine classname="com.dev.eficiente.casadocodigo.domain.AutorVO" start="65" end="69" startBytecode="0" endBytecode="183" sourcefile="AutorVO.java" sourcepath="com/dev/eficiente/casadocodigo/domain/AutorVO.java"/>
+      <Message>In method com.dev.eficiente.casadocodigo.domain.AutorVO.hashCode()</Message>
+    </Method>
+    <SourceLine classname="com.dev.eficiente.casadocodigo.domain.AutorVO" primary="true" start="69" end="69" startBytecode="54" endBytecode="54" sourcefile="AutorVO.java" sourcepath="com/dev/eficiente/casadocodigo/domain/AutorVO.java">
+      <Message>At AutorVO.java:[line 69]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="USBR_UNNECESSARY_STORE_BEFORE_RETURN" priority="2" rank="17" abbrev="USBR" category="STYLE" instanceHash="f6f712656e4654361a273d50546d6e38" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method stores return result in local before immediately returning it</ShortMessage>
+    <LongMessage>Method com.dev.eficiente.casadocodigo.domain.CategoriaVO.hashCode() stores return result in local before immediately returning it</LongMessage>
+    <Class classname="com.dev.eficiente.casadocodigo.domain.CategoriaVO" primary="true">
+      <SourceLine classname="com.dev.eficiente.casadocodigo.domain.CategoriaVO" start="6" end="58" sourcefile="CategoriaVO.java" sourcepath="com/dev/eficiente/casadocodigo/domain/CategoriaVO.java">
+        <Message>At CategoriaVO.java:[lines 6-58]</Message>
+      </SourceLine>
+      <Message>In class com.dev.eficiente.casadocodigo.domain.CategoriaVO</Message>
+    </Class>
+    <Method classname="com.dev.eficiente.casadocodigo.domain.CategoriaVO" name="hashCode" signature="()I" isStatic="false" primary="true">
+      <SourceLine classname="com.dev.eficiente.casadocodigo.domain.CategoriaVO" start="33" end="36" startBytecode="0" endBytecode="139" sourcefile="CategoriaVO.java" sourcepath="com/dev/eficiente/casadocodigo/domain/CategoriaVO.java"/>
+      <Message>In method com.dev.eficiente.casadocodigo.domain.CategoriaVO.hashCode()</Message>
+    </Method>
+    <SourceLine classname="com.dev.eficiente.casadocodigo.domain.CategoriaVO" primary="true" start="36" end="36" startBytecode="30" endBytecode="30" sourcefile="CategoriaVO.java" sourcepath="com/dev/eficiente/casadocodigo/domain/CategoriaVO.java">
+      <Message>At CategoriaVO.java:[line 36]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="USBR_UNNECESSARY_STORE_BEFORE_RETURN" priority="2" rank="17" abbrev="USBR" category="STYLE" instanceHash="e3eebdec96ccb994d03e1987ef064f5d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method stores return result in local before immediately returning it</ShortMessage>
+    <LongMessage>Method com.dev.eficiente.casadocodigo.domain.EstadoVO.hashCode() stores return result in local before immediately returning it</LongMessage>
+    <Class classname="com.dev.eficiente.casadocodigo.domain.EstadoVO" primary="true">
+      <SourceLine classname="com.dev.eficiente.casadocodigo.domain.EstadoVO" start="11" end="62" sourcefile="EstadoVO.java" sourcepath="com/dev/eficiente/casadocodigo/domain/EstadoVO.java">
+        <Message>At EstadoVO.java:[lines 11-62]</Message>
+      </SourceLine>
+      <Message>In class com.dev.eficiente.casadocodigo.domain.EstadoVO</Message>
+    </Class>
+    <Method classname="com.dev.eficiente.casadocodigo.domain.EstadoVO" name="hashCode" signature="()I" isStatic="false" primary="true">
+      <SourceLine classname="com.dev.eficiente.casadocodigo.domain.EstadoVO" start="36" end="40" startBytecode="0" endBytecode="183" sourcefile="EstadoVO.java" sourcepath="com/dev/eficiente/casadocodigo/domain/EstadoVO.java"/>
+      <Message>In method com.dev.eficiente.casadocodigo.domain.EstadoVO.hashCode()</Message>
+    </Method>
+    <SourceLine classname="com.dev.eficiente.casadocodigo.domain.EstadoVO" primary="true" start="40" end="40" startBytecode="54" endBytecode="54" sourcefile="EstadoVO.java" sourcepath="com/dev/eficiente/casadocodigo/domain/EstadoVO.java">
+      <Message>At EstadoVO.java:[line 40]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="USBR_UNNECESSARY_STORE_BEFORE_RETURN" priority="2" rank="17" abbrev="USBR" category="STYLE" instanceHash="be9ea60ab75acdf1ea65b50128f6d0aa" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method stores return result in local before immediately returning it</ShortMessage>
+    <LongMessage>Method com.dev.eficiente.casadocodigo.domain.ItemPedidoVO.hashCode() stores return result in local before immediately returning it</LongMessage>
+    <Class classname="com.dev.eficiente.casadocodigo.domain.ItemPedidoVO" primary="true">
+      <SourceLine classname="com.dev.eficiente.casadocodigo.domain.ItemPedidoVO" start="12" end="60" sourcefile="ItemPedidoVO.java" sourcepath="com/dev/eficiente/casadocodigo/domain/ItemPedidoVO.java">
+        <Message>At ItemPedidoVO.java:[lines 12-60]</Message>
+      </SourceLine>
+      <Message>In class com.dev.eficiente.casadocodigo.domain.ItemPedidoVO</Message>
+    </Class>
+    <Method classname="com.dev.eficiente.casadocodigo.domain.ItemPedidoVO" name="hashCode" signature="()I" isStatic="false" primary="true">
+      <SourceLine classname="com.dev.eficiente.casadocodigo.domain.ItemPedidoVO" start="34" end="37" startBytecode="0" endBytecode="139" sourcefile="ItemPedidoVO.java" sourcepath="com/dev/eficiente/casadocodigo/domain/ItemPedidoVO.java"/>
+      <Message>In method com.dev.eficiente.casadocodigo.domain.ItemPedidoVO.hashCode()</Message>
+    </Method>
+    <SourceLine classname="com.dev.eficiente.casadocodigo.domain.ItemPedidoVO" primary="true" start="37" end="37" startBytecode="30" endBytecode="30" sourcefile="ItemPedidoVO.java" sourcepath="com/dev/eficiente/casadocodigo/domain/ItemPedidoVO.java">
+      <Message>At ItemPedidoVO.java:[line 37]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="USBR_UNNECESSARY_STORE_BEFORE_RETURN" priority="2" rank="17" abbrev="USBR" category="STYLE" instanceHash="77e6eaa87592ac6b9de95f09915c4867" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method stores return result in local before immediately returning it</ShortMessage>
+    <LongMessage>Method com.dev.eficiente.casadocodigo.domain.LivroVO.hashCode() stores return result in local before immediately returning it</LongMessage>
+    <Class classname="com.dev.eficiente.casadocodigo.domain.LivroVO" primary="true">
+      <SourceLine classname="com.dev.eficiente.casadocodigo.domain.LivroVO" start="17" end="158" sourcefile="LivroVO.java" sourcepath="com/dev/eficiente/casadocodigo/domain/LivroVO.java">
+        <Message>At LivroVO.java:[lines 17-158]</Message>
+      </SourceLine>
+      <Message>In class com.dev.eficiente.casadocodigo.domain.LivroVO</Message>
+    </Class>
+    <Method classname="com.dev.eficiente.casadocodigo.domain.LivroVO" name="hashCode" signature="()I" isStatic="false" primary="true">
+      <SourceLine classname="com.dev.eficiente.casadocodigo.domain.LivroVO" start="131" end="134" startBytecode="0" endBytecode="139" sourcefile="LivroVO.java" sourcepath="com/dev/eficiente/casadocodigo/domain/LivroVO.java"/>
+      <Message>In method com.dev.eficiente.casadocodigo.domain.LivroVO.hashCode()</Message>
+    </Method>
+    <SourceLine classname="com.dev.eficiente.casadocodigo.domain.LivroVO" primary="true" start="134" end="134" startBytecode="30" endBytecode="30" sourcefile="LivroVO.java" sourcepath="com/dev/eficiente/casadocodigo/domain/LivroVO.java">
+      <Message>At LivroVO.java:[line 134]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="USBR_UNNECESSARY_STORE_BEFORE_RETURN" priority="2" rank="17" abbrev="USBR" category="STYLE" instanceHash="1ccb202e2d479dd6bd80bda8502b3e88" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method stores return result in local before immediately returning it</ShortMessage>
+    <LongMessage>Method com.dev.eficiente.casadocodigo.domain.PaisVO.hashCode() stores return result in local before immediately returning it</LongMessage>
+    <Class classname="com.dev.eficiente.casadocodigo.domain.PaisVO" primary="true">
+      <SourceLine classname="com.dev.eficiente.casadocodigo.domain.PaisVO" start="7" end="60" sourcefile="PaisVO.java" sourcepath="com/dev/eficiente/casadocodigo/domain/PaisVO.java">
+        <Message>At PaisVO.java:[lines 7-60]</Message>
+      </SourceLine>
+      <Message>In class com.dev.eficiente.casadocodigo.domain.PaisVO</Message>
+    </Class>
+    <Method classname="com.dev.eficiente.casadocodigo.domain.PaisVO" name="hashCode" signature="()I" isStatic="false" primary="true">
+      <SourceLine classname="com.dev.eficiente.casadocodigo.domain.PaisVO" start="30" end="33" startBytecode="0" endBytecode="139" sourcefile="PaisVO.java" sourcepath="com/dev/eficiente/casadocodigo/domain/PaisVO.java"/>
+      <Message>In method com.dev.eficiente.casadocodigo.domain.PaisVO.hashCode()</Message>
+    </Method>
+    <SourceLine classname="com.dev.eficiente.casadocodigo.domain.PaisVO" primary="true" start="33" end="33" startBytecode="30" endBytecode="30" sourcefile="PaisVO.java" sourcepath="com/dev/eficiente/casadocodigo/domain/PaisVO.java">
+      <Message>At PaisVO.java:[line 33]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="USBR_UNNECESSARY_STORE_BEFORE_RETURN" priority="2" rank="17" abbrev="USBR" category="STYLE" instanceHash="376dfc83d825c68466cb1ec9d9482c12" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method stores return result in local before immediately returning it</ShortMessage>
+    <LongMessage>Method com.dev.eficiente.casadocodigo.model.ItemPedido.hashCode() stores return result in local before immediately returning it</LongMessage>
+    <Class classname="com.dev.eficiente.casadocodigo.model.ItemPedido" primary="true">
+      <SourceLine classname="com.dev.eficiente.casadocodigo.model.ItemPedido" start="19" end="75" sourcefile="ItemPedido.java" sourcepath="com/dev/eficiente/casadocodigo/model/ItemPedido.java">
+        <Message>At ItemPedido.java:[lines 19-75]</Message>
+      </SourceLine>
+      <Message>In class com.dev.eficiente.casadocodigo.model.ItemPedido</Message>
+    </Class>
+    <Method classname="com.dev.eficiente.casadocodigo.model.ItemPedido" name="hashCode" signature="()I" isStatic="false" primary="true">
+      <SourceLine classname="com.dev.eficiente.casadocodigo.model.ItemPedido" start="42" end="45" startBytecode="0" endBytecode="139" sourcefile="ItemPedido.java" sourcepath="com/dev/eficiente/casadocodigo/model/ItemPedido.java"/>
+      <Message>In method com.dev.eficiente.casadocodigo.model.ItemPedido.hashCode()</Message>
+    </Method>
+    <SourceLine classname="com.dev.eficiente.casadocodigo.model.ItemPedido" primary="true" start="45" end="45" startBytecode="30" endBytecode="30" sourcefile="ItemPedido.java" sourcepath="com/dev/eficiente/casadocodigo/model/ItemPedido.java">
+      <Message>At ItemPedido.java:[line 45]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="PRMC_POSSIBLY_REDUNDANT_METHOD_CALLS" priority="2" rank="18" abbrev="PRMC" category="PERFORMANCE" instanceHash="dfff92ccf90e869def7b67eaf25f3bd7" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method appears to call the same method on the same object redundantly</ShortMessage>
+    <LongMessage>Method com.dev.eficiente.casadocodigo.model.Pedido.totalIgual(BigDecimal) appears to call the same method on the same object redundantly</LongMessage>
+    <Class classname="com.dev.eficiente.casadocodigo.model.Pedido" primary="true">
+      <SourceLine classname="com.dev.eficiente.casadocodigo.model.Pedido" start="30" end="75" sourcefile="Pedido.java" sourcepath="com/dev/eficiente/casadocodigo/model/Pedido.java">
+        <Message>At Pedido.java:[lines 30-75]</Message>
+      </SourceLine>
+      <Message>In class com.dev.eficiente.casadocodigo.model.Pedido</Message>
+    </Class>
+    <Method classname="com.dev.eficiente.casadocodigo.model.Pedido" name="totalIgual" signature="(Ljava/math/BigDecimal;)Z" isStatic="false" primary="true">
+      <SourceLine classname="com.dev.eficiente.casadocodigo.model.Pedido" start="56" end="59" startBytecode="0" endBytecode="153" sourcefile="Pedido.java" sourcepath="com/dev/eficiente/casadocodigo/model/Pedido.java"/>
+      <Message>In method com.dev.eficiente.casadocodigo.model.Pedido.totalIgual(BigDecimal)</Message>
+    </Method>
+    <SourceLine classname="com.dev.eficiente.casadocodigo.model.Pedido" primary="true" start="59" end="59" startBytecode="51" endBytecode="51" sourcefile="Pedido.java" sourcepath="com/dev/eficiente/casadocodigo/model/Pedido.java">
+      <Message>At Pedido.java:[line 59]</Message>
+    </SourceLine>
+    <String value="doubleValue()D">
+      <Message>Value doubleValue()D</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="JXI_UNDEFINED_PARAMETER_SOURCE_IN_ENDPOINT" priority="2" rank="7" abbrev="JXI" category="CORRECTNESS" instanceHash="9271a81bf0be30d1bcef72a2ddd58836" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>JAX-RS Method defines a parameter that has no @*Param or @Context annotation, or @Consumes method annotation</ShortMessage>
+    <LongMessage>JAX-RS Method com.dev.eficiente.casadocodigo.resources.AutorResource.criaAutor(AutorRequestForm) defines a parameter that has no @*Param or @Context annotation, or @Consumes method annotation</LongMessage>
+    <Class classname="com.dev.eficiente.casadocodigo.resources.AutorResource" primary="true">
+      <SourceLine classname="com.dev.eficiente.casadocodigo.resources.AutorResource" start="24" end="71" sourcefile="AutorResource.java" sourcepath="com/dev/eficiente/casadocodigo/resources/AutorResource.java">
+        <Message>At AutorResource.java:[lines 24-71]</Message>
+      </SourceLine>
+      <Message>In class com.dev.eficiente.casadocodigo.resources.AutorResource</Message>
+    </Class>
+    <Method classname="com.dev.eficiente.casadocodigo.resources.AutorResource" name="criaAutor" signature="(Lcom/dev/eficiente/casadocodigo/form/AutorRequestForm;)Ljavax/ws/rs/core/Response;" isStatic="false" primary="true">
+      <SourceLine classname="com.dev.eficiente.casadocodigo.resources.AutorResource" start="34" end="37" startBytecode="0" endBytecode="92" sourcefile="AutorResource.java" sourcepath="com/dev/eficiente/casadocodigo/resources/AutorResource.java"/>
+      <Message>In method com.dev.eficiente.casadocodigo.resources.AutorResource.criaAutor(AutorRequestForm)</Message>
+    </Method>
+    <String value="Parameter 1">
+      <Message>Value Parameter 1</Message>
+    </String>
+    <SourceLine classname="com.dev.eficiente.casadocodigo.resources.AutorResource" start="34" end="37" startBytecode="0" endBytecode="92" sourcefile="AutorResource.java" sourcepath="com/dev/eficiente/casadocodigo/resources/AutorResource.java" synthetic="true">
+      <Message>At AutorResource.java:[lines 34-37]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JXI_UNDEFINED_PARAMETER_SOURCE_IN_ENDPOINT" priority="2" rank="7" abbrev="JXI" category="CORRECTNESS" instanceHash="87eaa2956717390e1af2f6683744897e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>JAX-RS Method defines a parameter that has no @*Param or @Context annotation, or @Consumes method annotation</ShortMessage>
+    <LongMessage>JAX-RS Method com.dev.eficiente.casadocodigo.resources.CategoriaResource.create(CategoriaRequestForm) defines a parameter that has no @*Param or @Context annotation, or @Consumes method annotation</LongMessage>
+    <Class classname="com.dev.eficiente.casadocodigo.resources.CategoriaResource" primary="true">
+      <SourceLine classname="com.dev.eficiente.casadocodigo.resources.CategoriaResource" start="22" end="70" sourcefile="CategoriaResource.java" sourcepath="com/dev/eficiente/casadocodigo/resources/CategoriaResource.java">
+        <Message>At CategoriaResource.java:[lines 22-70]</Message>
+      </SourceLine>
+      <Message>In class com.dev.eficiente.casadocodigo.resources.CategoriaResource</Message>
+    </Class>
+    <Method classname="com.dev.eficiente.casadocodigo.resources.CategoriaResource" name="create" signature="(Lcom/dev/eficiente/casadocodigo/form/CategoriaRequestForm;)Ljavax/ws/rs/core/Response;" isStatic="false" primary="true">
+      <SourceLine classname="com.dev.eficiente.casadocodigo.resources.CategoriaResource" start="32" end="36" startBytecode="0" endBytecode="92" sourcefile="CategoriaResource.java" sourcepath="com/dev/eficiente/casadocodigo/resources/CategoriaResource.java"/>
+      <Message>In method com.dev.eficiente.casadocodigo.resources.CategoriaResource.create(CategoriaRequestForm)</Message>
+    </Method>
+    <String value="Parameter 1">
+      <Message>Value Parameter 1</Message>
+    </String>
+    <SourceLine classname="com.dev.eficiente.casadocodigo.resources.CategoriaResource" start="32" end="36" startBytecode="0" endBytecode="92" sourcefile="CategoriaResource.java" sourcepath="com/dev/eficiente/casadocodigo/resources/CategoriaResource.java" synthetic="true">
+      <Message>At CategoriaResource.java:[lines 32-36]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="JXI_UNDEFINED_PARAMETER_SOURCE_IN_ENDPOINT" priority="2" rank="7" abbrev="JXI" category="CORRECTNESS" instanceHash="fb8cd059e8a0215db7d7e29fa70acd25" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>JAX-RS Method defines a parameter that has no @*Param or @Context annotation, or @Consumes method annotation</ShortMessage>
+    <LongMessage>JAX-RS Method com.dev.eficiente.casadocodigo.resources.EstadoResource.create(EstadoRequestForm) defines a parameter that has no @*Param or @Context annotation, or @Consumes method annotation</LongMessage>
+    <Class classname="com.dev.eficiente.casadocodigo.resources.EstadoResource" primary="true">
+      <SourceLine classname="com.dev.eficiente.casadocodigo.resources.EstadoResource" start="32" end="80" sourcefile="EstadoResource.java" sourcepath="com/dev/eficiente/casadocodigo/resources/EstadoResource.java">
+        <Message>At EstadoResource.java:[lines 32-80]</Message>
+      </SourceLine>
+      <Message>In class com.dev.eficiente.casadocodigo.resources.EstadoResource</Message>
+    </Class>
+    <Method classname="com.dev.eficiente.casadocodigo.resources.EstadoResource" name="create" signature="(Lcom/dev/eficiente/casadocodigo/form/EstadoRequestForm;)Ljavax/ws/rs/core/Response;" isStatic="false" primary="true">
+      <SourceLine classname="com.dev.eficiente.casadocodigo.resources.EstadoResource" start="45" end="48" startBytecode="0" endBytecode="133" sourcefile="EstadoResource.java" sourcepath="com/dev/eficiente/casadocodigo/resources/EstadoResource.java"/>
+      <Message>In method com.dev.eficiente.casadocodigo.resources.EstadoResource.create(EstadoRequestForm)</Message>
+    </Method>
+    <String value="Parameter 1">
+      <Message>Value Parameter 1</Message>
+    </String>
+    <SourceLine classname="com.dev.eficiente.casadocodigo.resources.EstadoResource" start="45" end="48" startBytecode="0" endBytecode="133" sourcefile="EstadoResource.java" sourcepath="com/dev/eficiente/casadocodigo/resources/EstadoResource.java" synthetic="true">
+      <Message>At EstadoResource.java:[lines 45-48]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="JXI_UNDEFINED_PARAMETER_SOURCE_IN_ENDPOINT" abbrev="JXI" category="CORRECTNESS">
+    <ShortDescription>JAX-RS Method defines a parameter that has no @*Param or @Context annotation, or @Consumes method annotation</ShortDescription>
+    <Details><![CDATA[
+    		
+    		<p>This JAX-RS endpoint declares a parameter without specifying where the value of this parameter comes from.
+    		You can specify this by using one of several 'Param' annotations (@PathParam, @CookieParam, @FormParam @HeaderParam @MatrixParam @QueryParam),
+    		by adding a @Context parameter annotation, or you can declare that the method @Consumes an XML or JSON stream.</p>
+    		
+       	]]></Details>
+  </BugPattern>
+  <BugPattern type="USBR_UNNECESSARY_STORE_BEFORE_RETURN" abbrev="USBR" category="STYLE">
+    <ShortDescription>Method stores return result in local before immediately returning it</ShortDescription>
+    <Details><![CDATA[
+			
+			<p>This method stores the return result in a local variable, and then immediately
+			returns the local variable. It would be simpler just to return the value that is
+			assigned to the local variable, directly.</p>
+			<p>
+				Instead of the following: <br/>
+
+<pre><code>
+public float average(int[] arr) {
+    float sum = 0;
+    for (int i = 0; i &lt; arr.length; i++) {
+        sum += arr[i];
+    }
+    float ave = sum / arr.length;
+    return ave;
+}
+</code></pre>
+
+				Simply change the method to return the result of the division: <br/>
+
+<pre><code>
+public float average(int[] arr) {
+    float sum = 0;
+    for (int i = 0; i &lt; arr.length; i++) {
+        sum += arr[i];
+    }
+    <b>return sum / arr.length;</b> //Change
+}
+</code></pre>
+			</p>
+			
+		]]></Details>
+  </BugPattern>
+  <BugPattern type="PRMC_POSSIBLY_REDUNDANT_METHOD_CALLS" abbrev="PRMC" category="PERFORMANCE">
+    <ShortDescription>Method appears to call the same method on the same object redundantly</ShortDescription>
+    <Details><![CDATA[
+			
+			<p>This method makes two consecutive calls to the same method, using the same constant
+			parameters, on the same instance, without any intervening changes to the objects. If this
+			method does not make changes to the object, which it appears it doesn't, then making
+			two calls is just a waste. These method calls could be combined by assigning the
+			result into a temporary variable, and using the variable the second time.</p>
+			
+		]]></Details>
+  </BugPattern>
+  <BugCode abbrev="USBR">
+    <Description>Unnecessary Store Before Return</Description>
+  </BugCode>
+  <BugCode abbrev="JXI">
+    <Description>JAX-RS Issues</Description>
+  </BugCode>
+  <BugCode abbrev="PRMC">
+    <Description>Possibly Redundant Method Calls</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>apply</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Fri, 26 Mar 2021 13:03:50 -0300" total_classes="81" referenced_classes="182" total_bugs="11" total_size="1361" num_packages="8" java_version="15" vm_version="15+36-1562" cpu_seconds="21.59" clock_seconds="4.50" peak_mbytes="703.08" alloc_mbytes="4082.00" gc_seconds="0.06" priority_2="11">
+    <FileStats path="com/dev/eficiente/casadocodigo/configs/MyObjectMapperCustomizer.java" bugCount="0" size="6"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/domain/AutorVO.java" bugCount="1" size="53" bugHash="c2b5a4051cdb2a701b83e77d9614a524"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/domain/CategoriaVO.java" bugCount="1" size="37" bugHash="d0f3190c993637f123224ec4f14433aa"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/domain/CompraVO.java" bugCount="0" size="66"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/domain/CupomApliadoVO.java" bugCount="0" size="8"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/domain/CupomVO.java" bugCount="0" size="22"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/domain/EstadoVO.java" bugCount="1" size="43" bugHash="4a5fcc68b3393b40dc45e4dac5fc5df3"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/domain/ItemPedidoVO.java" bugCount="1" size="38" bugHash="dd8cad63f8f8afb6e603d82f76cf92e9"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/domain/LivroVO.java" bugCount="1" size="69" bugHash="66137772db6211598fe83ca95d47bea2"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/domain/PaisVO.java" bugCount="1" size="37" bugHash="326dd285d2232ba1406a54b1be45a784"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/domain/PedidoVO.java" bugCount="0" size="15"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/form/AutorRequestForm.java" bugCount="0" size="20"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/form/CategoriaRequestForm.java" bugCount="0" size="12"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/form/CompraRequestForm.java" bugCount="0" size="72"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/form/CupomRequestForm.java" bugCount="0" size="12"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/form/CupomUnico.java" bugCount="0" size="1"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/form/EstadoRequestForm.java" bugCount="0" size="17"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/form/ItemRequestForm.java" bugCount="0" size="17"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/form/LivroRequestForm.java" bugCount="0" size="46"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/form/PaisRequestForm.java" bugCount="0" size="10"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/form/PedidoRequestForm.java" bugCount="0" size="25"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/handlers/ErrorResponse.java" bugCount="0" size="16"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/model/Autor.java" bugCount="0" size="24"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/model/Categoria.java" bugCount="0" size="13"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/model/Compra.java" bugCount="0" size="80"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/model/Cupom.java" bugCount="0" size="24"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/model/CupomApliado.java" bugCount="0" size="18"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/model/Estado.java" bugCount="0" size="20"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/model/ItemPedido.java" bugCount="1" size="41" bugHash="e8ef47da3e908a4f0758c0ad74de272e"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/model/Livro.java" bugCount="0" size="48"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/model/Pais.java" bugCount="0" size="20"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/model/Pedido.java" bugCount="1" size="33" bugHash="1170edfcac64080b6658edd7c6c58ed8"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/providers/ArithmeticExceptionMapper.java" bugCount="0" size="8"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/resources/AutorResource.java" bugCount="1" size="19" bugHash="007e17ff2f27bf41b128a59ddcd17e69"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/resources/CategoriaResource.java" bugCount="1" size="19" bugHash="7f755c5c05b89834ad6667fa116cc52b"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/resources/CompraResource.java" bugCount="0" size="18"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/resources/CupomResource.java" bugCount="0" size="20"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/resources/EstadoResource.java" bugCount="1" size="21" bugHash="92fefc69711ea118638f4f998d64bbf4"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/resources/LivroResource.java" bugCount="0" size="21"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/resources/PaisResource.java" bugCount="0" size="21"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/AutorValido.java" bugCount="0" size="6"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/AutorValidoValidation.java" bugCount="0" size="11"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/CPFouCNPJ.java" bugCount="0" size="6"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/CategoriaUnica.java" bugCount="0" size="6"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/CategoriaUnicaValitation.java" bugCount="0" size="14"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/CategoriaValido.java" bugCount="0" size="6"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/CategoriaValidoValidation.java" bugCount="0" size="11"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/CupomValido.java" bugCount="0" size="6"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/CupomValidoValidation.java" bugCount="0" size="15"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/EmailAutor.java" bugCount="0" size="6"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/EmailAutorValidation.java" bugCount="0" size="14"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/EstadoPertenceAPais.java" bugCount="0" size="6"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/EstadoPertenceAPaisValidator.java" bugCount="0" size="15"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/EstadoUnico.java" bugCount="0" size="6"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/EstadoUnicoValidation.java" bugCount="0" size="14"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/EstadoValido.java" bugCount="0" size="6"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/EstadoValidoValidation.java" bugCount="0" size="11"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/ISBNUnico.java" bugCount="0" size="6"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/ISBNUnicoValidation.java" bugCount="0" size="14"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/LivroValido.java" bugCount="0" size="6"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/LivroValidoValidation.java" bugCount="0" size="11"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/PaisUnico.java" bugCount="0" size="6"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/PaisUnicoValitation.java" bugCount="0" size="14"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/PaisValido.java" bugCount="0" size="6"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/PaisValidoValidation.java" bugCount="0" size="11"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/TituloLivroUnico.java" bugCount="0" size="6"/>
+    <FileStats path="com/dev/eficiente/casadocodigo/validations/TituloLivroUnicoValidation.java" bugCount="0" size="12"/>
+    <PackageStats package="com.dev.eficiente.casadocodigo.configs" total_bugs="0" total_types="1" total_size="6">
+      <ClassStats class="com.dev.eficiente.casadocodigo.configs.MyObjectMapperCustomizer" sourceFile="MyObjectMapperCustomizer.java" interface="false" size="6" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.dev.eficiente.casadocodigo.domain" total_bugs="6" total_types="10" total_size="388" priority_2="6">
+      <ClassStats class="com.dev.eficiente.casadocodigo.domain.AutorVO" sourceFile="AutorVO.java" interface="false" size="53" bugs="1" priority_2="1"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.domain.CategoriaVO" sourceFile="CategoriaVO.java" interface="false" size="37" bugs="1" priority_2="1"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.domain.CompraVO" sourceFile="CompraVO.java" interface="false" size="66" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.domain.CupomApliadoVO" sourceFile="CupomApliadoVO.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.domain.CupomVO" sourceFile="CupomVO.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.domain.EstadoVO" sourceFile="EstadoVO.java" interface="false" size="43" bugs="1" priority_2="1"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.domain.ItemPedidoVO" sourceFile="ItemPedidoVO.java" interface="false" size="38" bugs="1" priority_2="1"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.domain.LivroVO" sourceFile="LivroVO.java" interface="false" size="69" bugs="1" priority_2="1"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.domain.PaisVO" sourceFile="PaisVO.java" interface="false" size="37" bugs="1" priority_2="1"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.domain.PedidoVO" sourceFile="PedidoVO.java" interface="false" size="15" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.dev.eficiente.casadocodigo.form" total_bugs="0" total_types="10" total_size="232">
+      <ClassStats class="com.dev.eficiente.casadocodigo.form.AutorRequestForm" sourceFile="AutorRequestForm.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.form.CategoriaRequestForm" sourceFile="CategoriaRequestForm.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.form.CompraRequestForm" sourceFile="CompraRequestForm.java" interface="false" size="72" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.form.CupomRequestForm" sourceFile="CupomRequestForm.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.form.CupomUnico" sourceFile="CupomUnico.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.form.EstadoRequestForm" sourceFile="EstadoRequestForm.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.form.ItemRequestForm" sourceFile="ItemRequestForm.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.form.LivroRequestForm" sourceFile="LivroRequestForm.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.form.PaisRequestForm" sourceFile="PaisRequestForm.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.form.PedidoRequestForm" sourceFile="PedidoRequestForm.java" interface="false" size="25" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.dev.eficiente.casadocodigo.handlers" total_bugs="0" total_types="1" total_size="16">
+      <ClassStats class="com.dev.eficiente.casadocodigo.handlers.ErrorResponse" sourceFile="ErrorResponse.java" interface="false" size="16" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.dev.eficiente.casadocodigo.model" total_bugs="2" total_types="10" total_size="321" priority_2="2">
+      <ClassStats class="com.dev.eficiente.casadocodigo.model.Autor" sourceFile="Autor.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.model.Categoria" sourceFile="Categoria.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.model.Compra" sourceFile="Compra.java" interface="false" size="80" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.model.Cupom" sourceFile="Cupom.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.model.CupomApliado" sourceFile="CupomApliado.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.model.Estado" sourceFile="Estado.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.model.ItemPedido" sourceFile="ItemPedido.java" interface="false" size="41" bugs="1" priority_2="1"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.model.Livro" sourceFile="Livro.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.model.Pais" sourceFile="Pais.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.model.Pedido" sourceFile="Pedido.java" interface="false" size="33" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="com.dev.eficiente.casadocodigo.providers" total_bugs="0" total_types="1" total_size="8">
+      <ClassStats class="com.dev.eficiente.casadocodigo.providers.ArithmeticExceptionMapper" sourceFile="ArithmeticExceptionMapper.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.dev.eficiente.casadocodigo.resources" total_bugs="3" total_types="7" total_size="139" priority_2="3">
+      <ClassStats class="com.dev.eficiente.casadocodigo.resources.AutorResource" sourceFile="AutorResource.java" interface="false" size="19" bugs="1" priority_2="1"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.resources.CategoriaResource" sourceFile="CategoriaResource.java" interface="false" size="19" bugs="1" priority_2="1"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.resources.CompraResource" sourceFile="CompraResource.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.resources.CupomResource" sourceFile="CupomResource.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.resources.EstadoResource" sourceFile="EstadoResource.java" interface="false" size="21" bugs="1" priority_2="1"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.resources.LivroResource" sourceFile="LivroResource.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.resources.PaisResource" sourceFile="PaisResource.java" interface="false" size="21" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.dev.eficiente.casadocodigo.validations" total_bugs="0" total_types="41" total_size="251">
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.AutorValido" sourceFile="AutorValido.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.AutorValido$List" sourceFile="AutorValido.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.AutorValidoValidation" sourceFile="AutorValidoValidation.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.CPFouCNPJ" sourceFile="CPFouCNPJ.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.CPFouCNPJ$List" sourceFile="CPFouCNPJ.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.CategoriaUnica" sourceFile="CategoriaUnica.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.CategoriaUnica$List" sourceFile="CategoriaUnica.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.CategoriaUnicaValitation" sourceFile="CategoriaUnicaValitation.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.CategoriaValido" sourceFile="CategoriaValido.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.CategoriaValido$List" sourceFile="CategoriaValido.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.CategoriaValidoValidation" sourceFile="CategoriaValidoValidation.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.CupomValido" sourceFile="CupomValido.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.CupomValido$List" sourceFile="CupomValido.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.CupomValidoValidation" sourceFile="CupomValidoValidation.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.EmailAutor" sourceFile="EmailAutor.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.EmailAutor$List" sourceFile="EmailAutor.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.EmailAutorValidation" sourceFile="EmailAutorValidation.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.EstadoPertenceAPais" sourceFile="EstadoPertenceAPais.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.EstadoPertenceAPais$List" sourceFile="EstadoPertenceAPais.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.EstadoPertenceAPaisValidator" sourceFile="EstadoPertenceAPaisValidator.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.EstadoUnico" sourceFile="EstadoUnico.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.EstadoUnico$List" sourceFile="EstadoUnico.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.EstadoUnicoValidation" sourceFile="EstadoUnicoValidation.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.EstadoValido" sourceFile="EstadoValido.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.EstadoValido$List" sourceFile="EstadoValido.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.EstadoValidoValidation" sourceFile="EstadoValidoValidation.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.ISBNUnico" sourceFile="ISBNUnico.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.ISBNUnico$List" sourceFile="ISBNUnico.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.ISBNUnicoValidation" sourceFile="ISBNUnicoValidation.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.LivroValido" sourceFile="LivroValido.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.LivroValido$List" sourceFile="LivroValido.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.LivroValidoValidation" sourceFile="LivroValidoValidation.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.PaisUnico" sourceFile="PaisUnico.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.PaisUnico$List" sourceFile="PaisUnico.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.PaisUnicoValitation" sourceFile="PaisUnicoValitation.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.PaisValido" sourceFile="PaisValido.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.PaisValido$List" sourceFile="PaisValido.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.PaisValidoValidation" sourceFile="PaisValidoValidation.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.TituloLivroUnico" sourceFile="TituloLivroUnico.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.TituloLivroUnico$List" sourceFile="TituloLivroUnico.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.dev.eficiente.casadocodigo.validations.TituloLivroUnicoValidation" sourceFile="TituloLivroUnicoValidation.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="442" invocations="922" avgMicrosecondsPerInvocation="480" maxMicrosecondsPerInvocation="14024" standardDeviationMicrosecondsPerInvocation="1027"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="223" invocations="956" avgMicrosecondsPerInvocation="234" maxMicrosecondsPerInvocation="14078" standardDeviationMicrosecondsPerInvocation="839"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="118" invocations="182" avgMicrosecondsPerInvocation="650" maxMicrosecondsPerInvocation="18932" standardDeviationMicrosecondsPerInvocation="2164"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.collect.CollectStatistics" totalMilliseconds="111" invocations="182" avgMicrosecondsPerInvocation="611" maxMicrosecondsPerInvocation="17505" standardDeviationMicrosecondsPerInvocation="2083"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="90" invocations="182" avgMicrosecondsPerInvocation="498" maxMicrosecondsPerInvocation="14559" standardDeviationMicrosecondsPerInvocation="1492"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.collect.CollectNullableMethodStatus" totalMilliseconds="81" invocations="182" avgMicrosecondsPerInvocation="449" maxMicrosecondsPerInvocation="22068" standardDeviationMicrosecondsPerInvocation="1937"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="75" invocations="441" avgMicrosecondsPerInvocation="172" maxMicrosecondsPerInvocation="15146" standardDeviationMicrosecondsPerInvocation="766"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="59" invocations="289" avgMicrosecondsPerInvocation="206" maxMicrosecondsPerInvocation="2390" standardDeviationMicrosecondsPerInvocation="320"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="56" invocations="457" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="2802" standardDeviationMicrosecondsPerInvocation="253"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.taintanalysis.TaintDataflowEngine" totalMilliseconds="53" invocations="307" avgMicrosecondsPerInvocation="175" maxMicrosecondsPerInvocation="7153" standardDeviationMicrosecondsPerInvocation="424"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="52" invocations="363" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="10246" standardDeviationMicrosecondsPerInvocation="543"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="50" invocations="307" avgMicrosecondsPerInvocation="165" maxMicrosecondsPerInvocation="4702" standardDeviationMicrosecondsPerInvocation="333"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="45" invocations="307" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="5879" standardDeviationMicrosecondsPerInvocation="394"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="45" invocations="878" avgMicrosecondsPerInvocation="51" maxMicrosecondsPerInvocation="1330" standardDeviationMicrosecondsPerInvocation="106"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="44" invocations="134" avgMicrosecondsPerInvocation="330" maxMicrosecondsPerInvocation="19095" standardDeviationMicrosecondsPerInvocation="1675"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="43" invocations="182" avgMicrosecondsPerInvocation="237" maxMicrosecondsPerInvocation="10802" standardDeviationMicrosecondsPerInvocation="899"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="41" invocations="30921" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="12900" standardDeviationMicrosecondsPerInvocation="73"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="41" invocations="363" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="25596" standardDeviationMicrosecondsPerInvocation="1340"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="41" invocations="182" avgMicrosecondsPerInvocation="225" maxMicrosecondsPerInvocation="15675" standardDeviationMicrosecondsPerInvocation="1188"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="41" invocations="307" avgMicrosecondsPerInvocation="133" maxMicrosecondsPerInvocation="7353" standardDeviationMicrosecondsPerInvocation="427"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="40" invocations="307" avgMicrosecondsPerInvocation="130" maxMicrosecondsPerInvocation="2368" standardDeviationMicrosecondsPerInvocation="186"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="38" invocations="182" avgMicrosecondsPerInvocation="212" maxMicrosecondsPerInvocation="6263" standardDeviationMicrosecondsPerInvocation="753"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="25" invocations="174" avgMicrosecondsPerInvocation="147" maxMicrosecondsPerInvocation="689" standardDeviationMicrosecondsPerInvocation="115"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.collect.CollectMethodsReturningImmutableCollections" totalMilliseconds="25" invocations="182" avgMicrosecondsPerInvocation="140" maxMicrosecondsPerInvocation="3716" standardDeviationMicrosecondsPerInvocation="443"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="25" invocations="182" avgMicrosecondsPerInvocation="138" maxMicrosecondsPerInvocation="8146" standardDeviationMicrosecondsPerInvocation="646"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="24" invocations="182" avgMicrosecondsPerInvocation="136" maxMicrosecondsPerInvocation="2967" standardDeviationMicrosecondsPerInvocation="402"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="22" invocations="81" avgMicrosecondsPerInvocation="276" maxMicrosecondsPerInvocation="1740" standardDeviationMicrosecondsPerInvocation="352"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="22" invocations="81" avgMicrosecondsPerInvocation="271" maxMicrosecondsPerInvocation="6242" standardDeviationMicrosecondsPerInvocation="692"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="20" invocations="182" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="7044" standardDeviationMicrosecondsPerInvocation="575"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="20" invocations="182" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="3050" standardDeviationMicrosecondsPerInvocation="384"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="18" invocations="81" avgMicrosecondsPerInvocation="233" maxMicrosecondsPerInvocation="1473" standardDeviationMicrosecondsPerInvocation="290"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="18" invocations="182" avgMicrosecondsPerInvocation="98" maxMicrosecondsPerInvocation="2795" standardDeviationMicrosecondsPerInvocation="315"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="17" invocations="4146" avgMicrosecondsPerInvocation="4" maxMicrosecondsPerInvocation="1370" standardDeviationMicrosecondsPerInvocation="25"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="17" invocations="81" avgMicrosecondsPerInvocation="221" maxMicrosecondsPerInvocation="1425" standardDeviationMicrosecondsPerInvocation="241"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="15" invocations="81" avgMicrosecondsPerInvocation="191" maxMicrosecondsPerInvocation="7327" standardDeviationMicrosecondsPerInvocation="842"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="12" invocations="307" avgMicrosecondsPerInvocation="42" maxMicrosecondsPerInvocation="1263" standardDeviationMicrosecondsPerInvocation="81"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="12" invocations="289" avgMicrosecondsPerInvocation="43" maxMicrosecondsPerInvocation="743" standardDeviationMicrosecondsPerInvocation="85"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="12" invocations="81" avgMicrosecondsPerInvocation="155" maxMicrosecondsPerInvocation="924" standardDeviationMicrosecondsPerInvocation="166"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.formatter.FormatStringManipulationDetector" totalMilliseconds="12" invocations="81" avgMicrosecondsPerInvocation="154" maxMicrosecondsPerInvocation="9861" standardDeviationMicrosecondsPerInvocation="1085"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="12" invocations="81" avgMicrosecondsPerInvocation="153" maxMicrosecondsPerInvocation="2274" standardDeviationMicrosecondsPerInvocation="292"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="11" invocations="81" avgMicrosecondsPerInvocation="143" maxMicrosecondsPerInvocation="1574" standardDeviationMicrosecondsPerInvocation="252"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.asm.ClassReaderAnalysisEngine" totalMilliseconds="11" invocations="958" avgMicrosecondsPerInvocation="12" maxMicrosecondsPerInvocation="3717" standardDeviationMicrosecondsPerInvocation="120"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,6 @@
+projectKey=com.dev.eficiente:casadocodigo-api
+serverUrl=http://localhost:9000
+serverVersion=8.7.1.42226
+dashboardUrl=http://localhost:9000/dashboard?id=com.dev.eficiente%3Acasadocodigo-api
+ceTaskId=AXhvsAxpgKgz14BZU41E
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXhvsAxpgKgz14BZU41E

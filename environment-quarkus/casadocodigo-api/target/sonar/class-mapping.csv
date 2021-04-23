@@ -1,0 +1,11 @@
+com.dev.eficiente.casadocodigo.domain.AutorVO:69,src/main/java/com/dev/eficiente/casadocodigo/domain/AutorVO.java:69
+com.dev.eficiente.casadocodigo.domain.CategoriaVO:36,src/main/java/com/dev/eficiente/casadocodigo/domain/CategoriaVO.java:36
+com.dev.eficiente.casadocodigo.domain.EstadoVO:40,src/main/java/com/dev/eficiente/casadocodigo/domain/EstadoVO.java:40
+com.dev.eficiente.casadocodigo.domain.ItemPedidoVO:37,src/main/java/com/dev/eficiente/casadocodigo/domain/ItemPedidoVO.java:37
+com.dev.eficiente.casadocodigo.domain.LivroVO:134,src/main/java/com/dev/eficiente/casadocodigo/domain/LivroVO.java:134
+com.dev.eficiente.casadocodigo.domain.PaisVO:33,src/main/java/com/dev/eficiente/casadocodigo/domain/PaisVO.java:33
+com.dev.eficiente.casadocodigo.model.ItemPedido:45,src/main/java/com/dev/eficiente/casadocodigo/model/ItemPedido.java:45
+com.dev.eficiente.casadocodigo.model.Pedido:59,src/main/java/com/dev/eficiente/casadocodigo/model/Pedido.java:59
+com.dev.eficiente.casadocodigo.resources.AutorResource:34,src/main/java/com/dev/eficiente/casadocodigo/resources/AutorResource.java:34
+com.dev.eficiente.casadocodigo.resources.CategoriaResource:32,src/main/java/com/dev/eficiente/casadocodigo/resources/CategoriaResource.java:32
+com.dev.eficiente.casadocodigo.resources.EstadoResource:45,src/main/java/com/dev/eficiente/casadocodigo/resources/EstadoResource.java:45
