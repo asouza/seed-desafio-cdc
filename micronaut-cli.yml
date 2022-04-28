@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.dev.eficiente.casa.codigo
+testFramework: junit
+sourceLanguage: kotlin
+buildTool: gradle_kotlin
+features: [annotation-api, app-name, data, data-jpa, gradle, h2, http-client, jackson-databind, jdbc-dbcp, junit, kotlin, kotlin-application, kotlin-build, logback, micronaut-build, mockito, netty-server, openapi, readme, shade, spring, spring-web, swagger-ui, yaml]
