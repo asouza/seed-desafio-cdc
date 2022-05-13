@@ -1,0 +1,75 @@
+openapi: 3.0.1
+info:
+  title: seed-desafio-cdc
+  version: "0.0"
+paths:
+  /autor:
+    post:
+      operationId: salvarAutor
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AutorDTO'
+        required: true
+      responses:
+        "200":
+          description: salvarAutor 200 response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Autor'
+  /seedDesafioCdc:
+    get:
+      operationId: index
+      parameters: []
+      responses:
+        "200":
+          description: index 200 response
+          content:
+            text/plain:
+              schema:
+                type: string
+components:
+  schemas:
+    Autor:
+      required:
+      - dataAdicionada
+      - descricao
+      - email
+      - id
+      - nome
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          nullable: true
+        nome:
+          type: string
+        descricao:
+          type: string
+        email:
+          type: string
+        dataAdicionada:
+          type: string
+          format: date-time
+    AutorDTO:
+      required:
+      - descricao
+      - email
+      - nome
+      type: object
+      properties:
+        nome:
+          minLength: 1
+          type: string
+        descricao:
+          maxLength: 400
+          minLength: 1
+          type: string
+        email:
+          minLength: 1
+          type: string
+          format: email
