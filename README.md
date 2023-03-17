@@ -11,7 +11,7 @@
 
 ## Tasks
 
-- [x] Setup projeto - java 19, spring 3.0.4, jpa, thymeleaf.
+- [x] Setup projeto - java 17, spring 3.0.4, jpa, thymeleaf.
 
 - [ ]  Cadastro Autor deve seguir as seguintes regras:
 
