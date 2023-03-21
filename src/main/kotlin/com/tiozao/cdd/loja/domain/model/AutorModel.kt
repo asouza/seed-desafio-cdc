@@ -1,10 +1,13 @@
 package com.tiozao.cdd.loja.domain.model
 
 
+import com.tiozao.cdd.loja.domain.model.validators.AutorEmail
+import jakarta.persistence.Column
 import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue
 import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
+import jakarta.persistence.UniqueConstraint
 import jakarta.validation.constraints.Email
 import jakarta.validation.constraints.NotNull
 import jakarta.validation.constraints.Size
@@ -21,8 +24,10 @@ data class AutorModel(
     @field:NotNull
     var nome: String?,
     @field:Email
+    @field:Column(unique = true)
+    @field:AutorEmail
     var email: String?,
-    @field:Size(min=0,max=400)
+    @field:Size(max=400)
     var descricao: String?,
     var instante: LocalDateTime? = LocalDateTime.now()
 ) {

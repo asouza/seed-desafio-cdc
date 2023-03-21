@@ -1,0 +1,1 @@
+ALTER TABLE autor ADD CONSTRAINT autor_unic_email UNIQUE (email);
