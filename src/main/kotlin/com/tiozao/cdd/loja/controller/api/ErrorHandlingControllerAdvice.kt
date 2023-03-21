@@ -1,6 +1,7 @@
 package com.tiozao.cdd.loja.controller.api
 
 import jakarta.validation.ConstraintViolationException
+import org.hibernate.validator.internal.engine.path.PathImpl
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.MethodArgumentNotValidException
 import org.springframework.web.bind.annotation.ControllerAdvice
@@ -20,7 +21,7 @@ internal class ErrorHandlingControllerAdvice {
         val error = ValidationErrorResponse()
         for (violation in e.getConstraintViolations()) {
             error.getViolations().add(
-                Violation(violation.propertyPath.toString(), violation.message)
+                Violation(violation.propertyPath.last().name, violation.message)
             )
         }
         return error
