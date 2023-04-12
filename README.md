@@ -13,7 +13,7 @@
 
 - [x] Setup projeto - java 17, spring 3.0.4, jpa, thymeleaf.
 
-- [ ]  Cadastro Autor deve seguir as seguintes regras:
+- [x]  Cadastro Autor deve seguir as seguintes regras:
 
  > É necessário cadastrar um novo autor no sistema. 
  > 
@@ -28,3 +28,14 @@
  >  - O email tem que ter formato válido
  >  - O nome é obrigatório
  >  - A descrição é obrigatória e não pode passar de 400 caracteres"
+
+- [ ] Cadastro de categoria
+
+> É necessário cadastrar uma  categoria
+> 
+> Toda categoria precisa de um nome
+> 
+> Restrições:
+> 
+> - O nome é obrigatório
+> - O nome não pode ser duplicado

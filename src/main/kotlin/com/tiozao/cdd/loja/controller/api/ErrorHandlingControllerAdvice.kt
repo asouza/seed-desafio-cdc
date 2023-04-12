@@ -1,13 +1,12 @@
 package com.tiozao.cdd.loja.controller.api
 
-import jakarta.validation.ConstraintViolationException
-import org.hibernate.validator.internal.engine.path.PathImpl
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.MethodArgumentNotValidException
 import org.springframework.web.bind.annotation.ControllerAdvice
 import org.springframework.web.bind.annotation.ExceptionHandler
 import org.springframework.web.bind.annotation.ResponseBody
 import org.springframework.web.bind.annotation.ResponseStatus
+import javax.validation.ConstraintViolationException
 
 
 @ControllerAdvice
