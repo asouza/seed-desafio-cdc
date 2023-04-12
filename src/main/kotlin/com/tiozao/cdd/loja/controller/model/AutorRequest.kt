@@ -1,10 +1,9 @@
 package com.tiozao.cdd.loja.controller.model
 
-import jakarta.validation.constraints.Email
-import jakarta.validation.constraints.Max
-import jakarta.validation.constraints.NotNull
-import jakarta.validation.constraints.Size
-import org.springframework.validation.annotation.Validated
+import javax.validation.constraints.Email
+import javax.validation.constraints.NotNull
+import javax.validation.constraints.Size
+
 
 data class AutorRequest(
     @field:NotNull
