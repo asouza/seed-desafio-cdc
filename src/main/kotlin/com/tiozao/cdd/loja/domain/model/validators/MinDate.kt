@@ -6,12 +6,10 @@ import kotlin.reflect.KClass
 
 @Target(AnnotationTarget.FIELD)
 @Retention(AnnotationRetention.RUNTIME)
-@Constraint(validatedBy = [UnicValueValidator::class])
+@Constraint(validatedBy = [MinDateValidator::class])
 @MustBeDocumented
-annotation class UnicValue(
-    val message: String = "ja cadastrada(o).",
+annotation class MinDate(
+    val message: String = "Data anterior a data atual.",
     val groups: Array<KClass<Any>> = [],
-    val payload: Array<KClass<Payload>> = [],
-    val fieldName: String,
-    val classTarget: KClass<*>,
+    val payload: Array<KClass<Payload>> = []
 )

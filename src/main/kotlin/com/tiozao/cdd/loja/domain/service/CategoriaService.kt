@@ -18,4 +18,8 @@ class CategoriaService(private var repository: CategoriaRepository) {
             categoria.toEntity())
             .toModel()
     }
+
+    fun findCategoria(categoriaId: Int): CategoriaModel {
+         repository.findById(categoriaId)?.let { return it.get().toModel() }
+    }
 }

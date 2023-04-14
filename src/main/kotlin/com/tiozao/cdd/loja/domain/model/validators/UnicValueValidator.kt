@@ -25,6 +25,6 @@ class UnicValueValidator: ConstraintValidator<UnicValue,String> {
         var query = entityManager.createQuery("select count(*) from ${classTarget!!.simpleName} c where c.$fieldName = :value ")
         query.setParameter("value", value)
         var result = query.resultList
-        return (result[0] as Int == 0)
+        return ( result[0] as Long)== 0L
     }
 }
