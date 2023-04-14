@@ -1,6 +1,7 @@
 package com.tiozao.cdd.loja.domain.model
 
 import com.tiozao.cdd.loja.domain.model.validators.UnicValue
+import com.tiozao.cdd.loja.repository.entity.AutorEntity
 import java.time.LocalDateTime
 import javax.persistence.GeneratedValue
 import javax.persistence.GenerationType
@@ -16,7 +17,7 @@ data class AutorModel(
     @field:NotNull
     var nome: String?,
     @field:Email
-    @field:UnicValue(fieldName = "email", classTarget = AutorModel::class, message = "Autor ja cadastrado com email.")
+    @field:UnicValue(fieldName = "email", classTarget = AutorEntity::class, message = "Autor ja cadastrado com email.")
     var email: String?,
     @field:Size(max=400)
     var descricao: String?,
