@@ -5,7 +5,9 @@ import com.tiozao.cdd.loja.controller.extensions.toResponse
 import com.tiozao.cdd.loja.controller.model.LivroRequest
 import com.tiozao.cdd.loja.controller.model.LivroResponse
 import com.tiozao.cdd.loja.domain.service.LivroService
-import com.tiozao.cdd.loja.repository.extensions.toEntity
+import org.springframework.data.domain.Page
+import org.springframework.data.domain.PageRequest
+import org.springframework.data.domain.Sort
 import org.springframework.http.ResponseEntity
 import org.springframework.validation.annotation.Validated
 import org.springframework.web.bind.annotation.*
@@ -22,12 +24,43 @@ class LivroController(private var livroService: LivroService) {
             .run { return ResponseEntity.notFound().build() }
     }
 
+    @GetMapping("/livros")
+    fun findAllLivro(
+        @RequestParam(name = "page", defaultValue = "0") page: Int,
+        @RequestParam(name = "size", defaultValue = "20") size: Int,
+        @RequestParam(name = "direction", defaultValue = "ASC") direction: String,
+        @RequestParam(name = "sortBy", defaultValue = "titulo") sortBy: String
+    ): ResponseEntity<Page<LivroResponse>> {
+        return ResponseEntity.ok(
+            livroService.findAllLivro(
+                PageRequest.of(page, size, getSort(direction, sortBy))
+            )
+                .map { it.toResponse() })
+    }
+
 
     @PostMapping("/livros")
-    fun createLivro(@Valid @RequestBody livro: LivroRequest): ResponseEntity<LivroResponse>{
-        return ResponseEntity.ok(livroService
-            .createLivro( livro.toModel() )
-            .toResponse())
+    fun createLivro(@Valid @RequestBody livro: LivroRequest): ResponseEntity<LivroResponse> {
+        return ResponseEntity.ok(
+            livroService
+                .createLivro(livro.toModel())
+                .toResponse()
+        )
+    }
+
+    companion object {
+        var FIELD_FILTERS = listOf<String>(
+            "id", "titulo", "sumario", "resumo", "preco", "numeroPaginas", "isbn", "dataPublicacao", "categoriaId",
+            "autorId", "instante"
+        )
+    }
+
+    private fun getSort(direction: String, sortBy: String): Sort {
+        if(FIELD_FILTERS.contains(sortBy)) {
+            return Sort.by(Sort.Direction.valueOf(direction), sortBy)
+        }else {
+            return Sort.by(Sort.Direction.valueOf(direction), FIELD_FILTERS.get(1))
+        }
     }
 
 }
