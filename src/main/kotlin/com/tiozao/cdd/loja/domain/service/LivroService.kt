@@ -6,6 +6,8 @@ import com.tiozao.cdd.loja.repository.CategoriaRepository
 import com.tiozao.cdd.loja.repository.LivroRepository
 import com.tiozao.cdd.loja.repository.extensions.toEntity
 import com.tiozao.cdd.loja.repository.extensions.toModel
+import org.springframework.data.domain.Page
+import org.springframework.data.domain.Pageable
 import org.springframework.stereotype.Service
 import org.springframework.validation.annotation.Validated
 import javax.validation.Valid
@@ -24,6 +26,10 @@ class LivroService(
             autorRepository.findById(livro.autorId).get()
         ))
             .toModel()
+    }
+
+    fun findAllLivro(pageable: Pageable): Page<LivroModel> {
+        return livroRepository.findAll(pageable).map { it.toModel() }
     }
 
     fun findLivro(id: Int): LivroModel? {
