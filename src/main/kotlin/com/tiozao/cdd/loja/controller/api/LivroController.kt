@@ -4,6 +4,8 @@ import com.tiozao.cdd.loja.controller.extensions.toModel
 import com.tiozao.cdd.loja.controller.extensions.toResponse
 import com.tiozao.cdd.loja.controller.model.LivroRequest
 import com.tiozao.cdd.loja.controller.model.LivroResponse
+import com.tiozao.cdd.loja.domain.service.AutorService
+import com.tiozao.cdd.loja.domain.service.CategoriaService
 import com.tiozao.cdd.loja.domain.service.LivroService
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.PageRequest
@@ -15,13 +17,19 @@ import javax.validation.Valid
 
 @RestController
 @Validated
-class LivroController(private var livroService: LivroService) {
+class LivroController(
+    private var livroService: LivroService,
+    private var categoriaService: CategoriaService,
+    private var autorService: AutorService) {
 
     @GetMapping("/livros/{id}")
     fun findLivro(@PathVariable("id") id: Int): ResponseEntity<LivroResponse> {
         livroService.findLivro(id)
-            ?.let { return ResponseEntity.ok(it.toResponse()) }
-            .run { return ResponseEntity.notFound().build() }
+            ?.let { return ResponseEntity.ok(
+                it.toResponse(
+                   categoriaService.findCategoria(it.categoriaId).toResponse(),
+                    autorService.findAutor(it.autorId).toResponse()))
+            }.run { return ResponseEntity.notFound().build() }
     }
 
     @GetMapping("/livros")
@@ -35,7 +43,9 @@ class LivroController(private var livroService: LivroService) {
             livroService.findAllLivro(
                 PageRequest.of(page, size, getSort(direction, sortBy))
             )
-                .map { it.toResponse() })
+                .map { it.toResponse(
+                    categoriaService.findCategoria(it.categoriaId).toResponse(),
+                    autorService.findAutor(it.autorId).toResponse()) })
     }
 
 
@@ -44,7 +54,9 @@ class LivroController(private var livroService: LivroService) {
         return ResponseEntity.ok(
             livroService
                 .createLivro(livro.toModel())
-                .toResponse()
+                .toResponse(
+                    categoriaService.findCategoria(livro.categoriaId).toResponse(),
+                    autorService.findAutor(livro.autorId).toResponse())
         )
     }
 

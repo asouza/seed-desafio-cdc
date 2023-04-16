@@ -13,7 +13,7 @@ data class LivroResponse(
     var numeroPaginas: Int?,
     var isbn: String,
     var dataPublicacao: LocalDate?,
-    var categoriaId: Int,
-    var autorId: Int,
+    var categoria: CategoriaResponse,
+    var autor: AutorResponse,
     var instante: LocalDateTime? = LocalDateTime.now()
 )

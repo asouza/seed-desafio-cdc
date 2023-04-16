@@ -36,7 +36,8 @@ fun CategoriaModel.toResponse(): CategoriaResponse = CategoriaResponse(
     nome = this.nome!!
 )
 
-fun LivroModel.toResponse(): LivroResponse = LivroResponse(
+fun LivroModel.toResponse(categoriaResponse: CategoriaResponse,
+                          autorResponse: AutorResponse): LivroResponse = LivroResponse(
     id = this.id,
     titulo = this.titulo,
     resumo = this.resumo,
@@ -45,8 +46,8 @@ fun LivroModel.toResponse(): LivroResponse = LivroResponse(
     numeroPaginas = this.numeroPaginas,
     isbn = this.isbn,
     dataPublicacao=this.dataPublicacao,
-    categoriaId = this.categoriaId,
-    autorId = this.autorId,
+    categoria = categoriaResponse,
+    autor = autorResponse,
     instante = this.instante
 )
 
