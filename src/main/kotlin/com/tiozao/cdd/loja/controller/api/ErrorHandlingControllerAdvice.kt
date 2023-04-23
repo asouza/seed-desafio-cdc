@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice
 import org.springframework.web.bind.annotation.ExceptionHandler
 import org.springframework.web.bind.annotation.ResponseBody
 import org.springframework.web.bind.annotation.ResponseStatus
+import javax.validation.ConstraintViolation
 import javax.validation.ConstraintViolationException
 
 
@@ -20,10 +21,17 @@ internal class ErrorHandlingControllerAdvice {
         val error = ValidationErrorResponse()
         for (violation in e.getConstraintViolations()) {
             error.getViolations().add(
-                Violation(violation.propertyPath.last().name, violation.message)
+                getViolation(violation)
+
             )
         }
         return error
+    }
+
+    private fun getViolation(violation: ConstraintViolation<*>?): Violation {
+        var lastViolation = violation!!.propertyPath.filter { !it.name.isNullOrBlank() }
+            .last()
+              return Violation(lastViolation.name, violation.message)
     }
 
     @ExceptionHandler(MethodArgumentNotValidException::class)
