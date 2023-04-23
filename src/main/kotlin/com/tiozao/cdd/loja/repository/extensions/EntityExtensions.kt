@@ -1,13 +1,9 @@
 package com.tiozao.cdd.loja.repository.extensions
 
-import com.tiozao.cdd.loja.domain.model.AutorModel
-import com.tiozao.cdd.loja.domain.model.CategoriaModel
-import com.tiozao.cdd.loja.domain.model.LivroModel
+import com.tiozao.cdd.loja.domain.model.*
 import com.tiozao.cdd.loja.domain.service.AutorService
 import com.tiozao.cdd.loja.domain.service.CategoriaService
-import com.tiozao.cdd.loja.repository.entity.AutorEntity
-import com.tiozao.cdd.loja.repository.entity.CategoriaEntity
-import com.tiozao.cdd.loja.repository.entity.LivroEntity
+import com.tiozao.cdd.loja.repository.entity.*
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
 
@@ -73,5 +69,34 @@ fun LivroEntity.toModel(): LivroModel = LivroModel(
     categoriaId = this.categoria.id!!,
     autorId = this.autor.id!!,
     instante = this.instante
+)
 
+fun PaisModel.toEntity() = PaisEntity(
+    id = this.id,
+    nome = this.nome,
+    estados = this.estados.map { it.toEntity() }.toMutableList()
+)
+
+fun PaisEntity.toModel() = PaisModel(
+    id =this.id,
+    nome = this.nome,
+    estados = this.estados.map { it.toModel() }.toMutableList()
+)
+
+fun EstadoEntity.toModel() = EstadoModel(
+    id = this.id,
+    nome = this.nome,
+    sigla = this.sigla,
+    pais = PaisModel(
+        id = this.pais.id,
+        nome = this.pais.nome )
+)
+
+fun EstadoModel.toEntity() = EstadoEntity(
+    id = this.id,
+    nome = this.nome,
+    sigla = this.sigla,
+    pais = PaisEntity(
+        id = this.pais?.id,
+        nome = this.pais?.nome )
 )
