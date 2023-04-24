@@ -41,3 +41,17 @@ fun EstadoModel.toResponse() = EstadoResponse(
     nome = this.nome,
     sigla = this.sigla
 )
+
+fun CompradorModel.toResponse() = CompradorResponse(
+    email = this.email,
+    nome = this.nome,
+    sobrenome = this.sobrenome,
+    documento = this.documento,
+    endereco = this.endereco,
+    complemento = this.complemento,
+    cidade = this.cidade,
+    pais = this.pais.nome!!,
+    estado = this.estado?.nome,
+    telefone = this.telefone,
+    cep = this.cep
+)

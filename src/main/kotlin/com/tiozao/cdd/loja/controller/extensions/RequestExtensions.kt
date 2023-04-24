@@ -44,3 +44,25 @@ fun EstadoRequest.toModel(paisNome: String) = EstadoModel(
         nome = paisNome
     )
 )
+
+fun CompradorRequest.ToModel() = CompradorModel(
+    email = this.email,
+    nome = this.nome,
+    sobrenome = this.sobrenome,
+    documento = this.documento,
+    endereco = this.endereco,
+    complemento = this.complemento,
+    cidade = this.cidade,
+    pais = PaisModel(
+        id = null,
+        nome = this.pais
+    ),
+    estado = EstadoModel(
+        id = null,
+        nome = this.estado,
+        sigla = null,
+        pais = null
+    ),
+    telefone = this.telefone,
+    cep = this.cep
+)
