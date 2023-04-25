@@ -81,7 +81,7 @@
 
 
 
-- [ ] Cadastro comprador
+- [x] Cadastro comprador parte 1
 
 >
 > Necessidades

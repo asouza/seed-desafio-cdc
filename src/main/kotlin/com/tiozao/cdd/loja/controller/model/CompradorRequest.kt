@@ -21,7 +21,7 @@ data class CompradorRequest (
         var cidade: String,
         @field:NotNull
         var pais: String,
-        var estado: String,
+        var estado: String?,
         @field:NotNull
         var telefone: String,
         @field:NotNull

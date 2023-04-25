@@ -57,12 +57,13 @@ fun CompradorRequest.ToModel() = CompradorModel(
         id = null,
         nome = this.pais
     ),
-    estado = EstadoModel(
-        id = null,
-        nome = this.estado,
-        sigla = null,
-        pais = null
-    ),
+    estado = this.estado?.let {
+        EstadoModel(
+            id = null,
+            nome = this.estado,
+            sigla = null,
+            pais = null
+        ) } ,
     telefone = this.telefone,
     cep = this.cep
 )
