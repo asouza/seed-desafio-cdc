@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice
 import org.springframework.web.bind.annotation.ExceptionHandler
 import org.springframework.web.bind.annotation.ResponseBody
 import org.springframework.web.bind.annotation.ResponseStatus
+import javax.management.InvalidAttributeValueException
 import javax.validation.ConstraintViolation
 import javax.validation.ConstraintViolationException
 
@@ -49,6 +50,19 @@ internal class ErrorHandlingControllerAdvice {
         return error
     }
 
+
+    @ExceptionHandler(InvalidAttributeValueException::class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ResponseBody
+    fun onMethodArgumentNotValidException(
+        e: InvalidAttributeValueException
+    ): ValidationErrorResponse {
+        var error = ValidationErrorResponse()
+        error.getViolations().add(
+            Violation("modelo", e.message)
+        )
+        return error
+    }
 
 }
 

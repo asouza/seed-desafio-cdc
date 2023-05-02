@@ -43,6 +43,7 @@ fun EstadoModel.toResponse() = EstadoResponse(
 )
 
 fun CompradorModel.toResponse() = CompradorResponse(
+    id = this.id,
     email = this.email,
     nome = this.nome,
     sobrenome = this.sobrenome,
@@ -50,8 +51,14 @@ fun CompradorModel.toResponse() = CompradorResponse(
     endereco = this.endereco,
     complemento = this.complemento,
     cidade = this.cidade,
-    pais = this.pais.nome!!,
-    estado = this.estado?.nome,
+    paisId = this.paisId,
+    estadoId = this.estadoId,
     telefone = this.telefone,
     cep = this.cep
+)
+
+fun CarrinhoCompraModel.toResponse() = CarrinhoCompraResponse(
+
+    total = this.total!!,
+    itens = this.itens.map { Itens( idLivro = it.idLivro, quantidade = it.quantidade) }.toMutableList()
 )

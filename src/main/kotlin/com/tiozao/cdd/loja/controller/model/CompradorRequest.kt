@@ -4,6 +4,7 @@ import javax.validation.constraints.Email
 import javax.validation.constraints.NotNull
 
 data class CompradorRequest (
+        var id: Int?,
         @field:Email
         @field:NotNull
         var email: String,
@@ -20,8 +21,8 @@ data class CompradorRequest (
         @field:NotNull
         var cidade: String,
         @field:NotNull
-        var pais: String,
-        var estado: String?,
+        var paisId: Int,
+        var estadoId: Int?,
         @field:NotNull
         var telefone: String,
         @field:NotNull

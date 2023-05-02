@@ -8,6 +8,7 @@ import javax.validation.constraints.Email
 import javax.validation.constraints.NotNull
 @EstadoPaisValido
 data class CompradorModel(
+    var id: Int?,
     @field:Email
     @field:NotNull
     var email: String,
@@ -24,10 +25,10 @@ data class CompradorModel(
     @field:NotNull
     var cidade: String,
     @field:NotNull
-    var pais: PaisModel,
-    var estado: EstadoModel?,
+    var paisId: Int,
+    var estadoId: Int?,
     @field:NotNull
-    var telefone: String,
+    var telefone: String?,
     @field:NotNull
-    var cep: String
+    var cep: String?
 )

@@ -46,6 +46,7 @@ fun EstadoRequest.toModel(paisNome: String) = EstadoModel(
 )
 
 fun CompradorRequest.ToModel() = CompradorModel(
+    id = this.id,
     email = this.email,
     nome = this.nome,
     sobrenome = this.sobrenome,
@@ -53,17 +54,16 @@ fun CompradorRequest.ToModel() = CompradorModel(
     endereco = this.endereco,
     complemento = this.complemento,
     cidade = this.cidade,
-    pais = PaisModel(
-        id = null,
-        nome = this.pais
-    ),
-    estado = this.estado?.let {
-        EstadoModel(
-            id = null,
-            nome = this.estado,
-            sigla = null,
-            pais = null
-        ) } ,
+    paisId =  this.paisId,
+    estadoId = this.estadoId,
     telefone = this.telefone,
     cep = this.cep
 )
+
+fun CarrinhoCompraRequest.toModel(idComprador: Int) = CarrinhoCompraModel(
+    id = null,
+    idComprador = idComprador,
+    total = this.total,
+    itens = this.itens.map { ItensModel(idLivro =  it.idLivro, quantidade = it.quantidade) }.toMutableList()
+)
+

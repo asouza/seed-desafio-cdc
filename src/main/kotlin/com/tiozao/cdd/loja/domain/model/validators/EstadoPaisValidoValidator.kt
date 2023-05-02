@@ -23,21 +23,21 @@ class EstadoPaisValidoValidator: ConstraintValidator<EstadoPaisValido,CompradorM
     }
 
     override fun isValid(value: CompradorModel, context: ConstraintValidatorContext?): Boolean {
-        value.estado?.let {
+        value.estadoId?.let {
             var query = entityManager.createQuery(
                 "select count(*) from EstadoEntity e " +
                         " inner join PaisEntity p on e.pais.id = p.id " +
-                        " where e.nome = :estadoNome AND p.nome = :paisNome ")
-            query.setParameter("estadoNome", value!!.estado!!.nome)
-            query.setParameter("paisNome", value.pais!!.nome)
+                        " where e.id = :estadoId AND p.id = :paisId ")
+            query.setParameter("estadoId", value!!.estadoId!!)
+            query.setParameter("paisId", value.paisId!!)
             var result = query!!.resultList
             return ( result[0] as Long)== 1L
         }.run{
             var query = entityManager.createQuery(
                 " select count(*) from PaisEntity p " +
                         " left join EstadoEntity e on e.pais.id = p.id " +
-                        " where p.nome = :paisNome ")
-            query.setParameter("paisNome", value.pais!!.nome)
+                        " where p.id = :paisId ")
+            query.setParameter("paisId", value.paisId)
             var result = query!!.resultList
             return ( result[0] as Long) == 1L
         }
