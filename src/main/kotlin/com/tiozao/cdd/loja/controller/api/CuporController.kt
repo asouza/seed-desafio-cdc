@@ -1,8 +1,7 @@
 package com.tiozao.cdd.loja.controller.api
 
-import com.tiozao.cdd.loja.domain.model.AutorModel
-import com.tiozao.cdd.loja.domain.service.AutorService
-
+import com.tiozao.cdd.loja.domain.model.CupomModel
+import com.tiozao.cdd.loja.domain.service.CupomService
 import org.springframework.http.ResponseEntity
 import org.springframework.validation.annotation.Validated
 import org.springframework.web.bind.annotation.PostMapping
@@ -10,16 +9,15 @@ import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RestController
 import javax.validation.Valid
 
-
 @RestController
 @Validated
-class AutorController(private var autorService: AutorService) {
+class CuporController(private var cupomService: CupomService) {
 
-    @PostMapping("/autor")
-    fun createAutor(@Valid @RequestBody autor: AutorModel): ResponseEntity<AutorModel>{
+    @PostMapping("/cupom")
+    fun createCupom(@Valid @RequestBody cupomRequest: CupomModel):ResponseEntity<CupomModel> {
         return ResponseEntity.ok(
-            autorService.createAutor(
-                autor))
+           cupomService.createCupom(cupomRequest)
+        )
     }
 
 }

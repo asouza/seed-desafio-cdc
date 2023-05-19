@@ -100,3 +100,65 @@ fun EstadoModel.toEntity() = EstadoEntity(
         id = this.pais?.id,
         nome = this.pais?.nome )
 )
+
+fun CompradorEntity.toModel() = CompradorModel(
+    id = this.id,
+    email = this.email,
+    nome = this.nome,
+    sobrenome = this.sobrenome,
+    documento = this.documento,
+    endereco = this.endereco,
+    complemento = this.complemento,
+    cidade = this.cidade,
+    paisId = this.pais.id!!,
+    estadoId = this.estado?.let {
+       it.id
+    },
+    telefone = this.telefone,
+    cep = this.cep
+)
+
+fun CompradorModel.toEntity(paisEntity: PaisEntity, estadoEntity: EstadoEntity?) = CompradorEntity(
+    id = this.id,
+    email = this.email,
+    nome = this.nome,
+    sobrenome = this.sobrenome,
+    documento = this.documento,
+    endereco = this.endereco,
+    cidade = this.cidade,
+    complemento = this.complemento,
+    pais = paisEntity,
+    estado = estadoEntity,
+    telefone = this.telefone,
+    cep = this.cep
+)
+
+fun CarrinhoCompraModel.toEntity(compradorEntity: CompradorEntity, itens: MutableList<CarrinhoCompraItemEntity>? ) = CarrinhoCompraEntity(
+    id = null,
+    itens = itens,
+    comprador = compradorEntity,
+    total = this.total!!
+)
+
+fun CarrinhoCompraEntity.toModel() = CarrinhoCompraModel(
+    id =  this.id,
+    total = this.total,
+    itens = this.itens!!.map { ItensModel(
+        idLivro = it.livro.id!!,
+        quantidade = it.quantidade,
+    )}.toMutableList(),
+    idComprador = this.comprador.id
+)
+
+fun CupomModel.toEntity() = CupomEntity(
+    id = null,
+    codigo = this.codigo,
+    percent = this.percent,
+    validade = this.validade
+)
+
+fun CupomEntity.toModel() = CupomModel(
+    codigo = this.codigo,
+    percent = this.percent,
+    validade = this.validade
+)
