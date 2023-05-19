@@ -149,3 +149,16 @@ fun CarrinhoCompraEntity.toModel() = CarrinhoCompraModel(
     )}.toMutableList(),
     idComprador = this.comprador.id
 )
+
+fun CupomModel.toEntity() = CupomEntity(
+    id = null,
+    codigo = this.codigo,
+    percent = this.percent,
+    validade = this.validade
+)
+
+fun CupomEntity.toModel() = CupomModel(
+    codigo = this.codigo,
+    percent = this.percent,
+    validade = this.validade
+)

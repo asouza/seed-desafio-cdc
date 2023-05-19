@@ -1,9 +1,6 @@
 package com.tiozao.cdd.loja.controller.api
 
-import com.tiozao.cdd.loja.controller.extensions.ToModel
-import com.tiozao.cdd.loja.controller.extensions.toResponse
-import com.tiozao.cdd.loja.controller.model.CompradorRequest
-import com.tiozao.cdd.loja.controller.model.CompradorResponse
+import com.tiozao.cdd.loja.domain.model.CompradorModel
 import com.tiozao.cdd.loja.domain.service.CompradorService
 import org.springframework.http.ResponseEntity
 import org.springframework.validation.annotation.Validated
@@ -17,11 +14,9 @@ import javax.validation.Valid
 class Compradorontroller(private var compradorService: CompradorService) {
 
     @PostMapping("/comprador")
-    fun createComprador(@Valid @RequestBody compradorRequest: CompradorRequest): ResponseEntity<CompradorResponse> {
+    fun createComprador(@Valid @RequestBody compradorRequest: CompradorModel): ResponseEntity<CompradorModel> {
         return ResponseEntity.ok(compradorService
-            .createComprador(
-                compradorRequest.ToModel())
-            .toResponse())
+            .createComprador(compradorRequest))
     }
 
 }

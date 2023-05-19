@@ -1,5 +1,6 @@
 package com.tiozao.cdd.loja.domain.model
 
+import com.fasterxml.jackson.annotation.JsonFormat
 import com.tiozao.cdd.loja.domain.model.validators.MinDate
 import com.tiozao.cdd.loja.domain.model.validators.UnicValue
 import com.tiozao.cdd.loja.repository.entity.LivroEntity
@@ -30,6 +31,7 @@ data class LivroModel (
     @field:UnicValue(fieldName = "isbn", classTarget = LivroEntity::class)
     var isbn: String,
     @field:MinDate
+    @field:JsonFormat(pattern = "dd/MM/yyyy")
     var dataPublicacao: LocalDate?,
     @field:NotNull
     var categoriaId: Int,

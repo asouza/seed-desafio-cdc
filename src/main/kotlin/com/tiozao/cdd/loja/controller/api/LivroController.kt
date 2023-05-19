@@ -1,9 +1,6 @@
 package com.tiozao.cdd.loja.controller.api
 
-import com.tiozao.cdd.loja.controller.extensions.toModel
-import com.tiozao.cdd.loja.controller.extensions.toResponse
-import com.tiozao.cdd.loja.controller.model.LivroRequest
-import com.tiozao.cdd.loja.controller.model.LivroResponse
+import com.tiozao.cdd.loja.domain.model.LivroModel
 import com.tiozao.cdd.loja.domain.service.AutorService
 import com.tiozao.cdd.loja.domain.service.CategoriaService
 import com.tiozao.cdd.loja.domain.service.LivroService
@@ -23,12 +20,9 @@ class LivroController(
     private var autorService: AutorService) {
 
     @GetMapping("/livros/{id}")
-    fun findLivro(@PathVariable("id") id: Int): ResponseEntity<LivroResponse> {
+    fun findLivro(@PathVariable("id") id: Int): ResponseEntity<LivroModel> {
         livroService.findLivro(id)
-            ?.let { return ResponseEntity.ok(
-                it.toResponse(
-                   categoriaService.findCategoria(it.categoriaId).toResponse(),
-                    autorService.findAutor(it.autorId).toResponse()))
+            ?.let { return ResponseEntity.ok( it )
             }.run { return ResponseEntity.notFound().build() }
     }
 
@@ -38,26 +32,19 @@ class LivroController(
         @RequestParam(name = "size", defaultValue = "20") size: Int,
         @RequestParam(name = "direction", defaultValue = "ASC") direction: String,
         @RequestParam(name = "sortBy", defaultValue = "titulo") sortBy: String
-    ): ResponseEntity<Page<LivroResponse>> {
+    ): ResponseEntity<Page<LivroModel>> {
         return ResponseEntity.ok(
             livroService.findAllLivro(
                 PageRequest.of(page, size, getSort(direction, sortBy))
-            )
-                .map { it.toResponse(
-                    categoriaService.findCategoria(it.categoriaId).toResponse(),
-                    autorService.findAutor(it.autorId).toResponse()) })
+            ))
     }
 
 
     @PostMapping("/livros")
-    fun createLivro(@Valid @RequestBody livro: LivroRequest): ResponseEntity<LivroResponse> {
+    fun createLivro(@Valid @RequestBody livro: LivroModel): ResponseEntity<LivroModel> {
         return ResponseEntity.ok(
             livroService
-                .createLivro(livro.toModel())
-                .toResponse(
-                    categoriaService.findCategoria(livro.categoriaId).toResponse(),
-                    autorService.findAutor(livro.autorId).toResponse())
-        )
+                .createLivro(livro))
     }
 
     companion object {

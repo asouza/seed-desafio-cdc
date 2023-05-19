@@ -1,9 +1,6 @@
 package com.tiozao.cdd.loja.controller.api
 
-import com.tiozao.cdd.loja.controller.extensions.toModel
-import com.tiozao.cdd.loja.controller.extensions.toResponse
-import com.tiozao.cdd.loja.controller.model.EstadoRequest
-import com.tiozao.cdd.loja.controller.model.EstadoResponse
+import com.tiozao.cdd.loja.domain.model.EstadoModel
 import com.tiozao.cdd.loja.domain.service.PaisService
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.PathVariable
@@ -18,10 +15,9 @@ class EstadoController(private var paisService: PaisService) {
     @PostMapping("/pais/{paisNome}/estado")
     fun createEstado(
         @PathVariable("paisNome") paisNome: String,
-        @RequestBody estadoRequest: EstadoRequest
-    ): ResponseEntity<EstadoResponse> {
+        @RequestBody estadoRequest: EstadoModel
+    ): ResponseEntity<EstadoModel> {
         return ResponseEntity.ok(
-            paisService.addEstadoToPais(estadoRequest.toModel(paisNome),paisNome)
-                .toResponse())
+            paisService.addEstadoToPais(estadoRequest,paisNome))
     }
 }
