@@ -1,12 +1,9 @@
 package com.tiozao.cdd.loja.domain.model
 
 import com.tiozao.cdd.loja.domain.model.validators.CPF_OR_CNPJ
-import com.tiozao.cdd.loja.domain.model.validators.EstadoPaisValido
-import org.hibernate.validator.constraints.br.CNPJ
-import org.hibernate.validator.constraints.br.CPF
 import javax.validation.constraints.Email
 import javax.validation.constraints.NotNull
-@EstadoPaisValido
+
 data class CompradorModel(
     var id: Int?,
     @field:Email

@@ -10,7 +10,8 @@ data class EstadoEntity (
     var id: Int?,
     var nome: String?,
     var sigla: String?,
-    @ManyToOne
+
+    @ManyToOne(fetch = FetchType.LAZY)
     var pais: PaisEntity
     ){
 

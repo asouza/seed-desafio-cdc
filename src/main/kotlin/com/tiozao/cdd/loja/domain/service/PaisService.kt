@@ -18,7 +18,7 @@ class PaisService(
     ) {
 
     fun createPais(@Valid paisModel: PaisModel): PaisModel {
-        return paisRepository.save(paisModel.toEntity())
+        return paisRepository.save(paisModel.toEntity(false))
             .toModel()
     }
 

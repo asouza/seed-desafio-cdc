@@ -19,7 +19,7 @@ class CategoriaService(private var repository: CategoriaRepository) {
             .toModel()
     }
 
-    fun findCategoria(categoriaId: Int): CategoriaModel {
-         repository.findById(categoriaId)?.let { return it.get().toModel() }
-    }
+    fun findCategoria(categoriaId: Int) =
+         repository.findById(categoriaId).orElse( null)
+
 }

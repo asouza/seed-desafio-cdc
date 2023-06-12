@@ -1,12 +1,10 @@
 package com.tiozao.cdd.loja.domain.service
 
 import com.tiozao.cdd.loja.domain.model.CarrinhoCompraModel
-import com.tiozao.cdd.loja.repository.CarrinhoCompraItenRepository
-import com.tiozao.cdd.loja.repository.CarrinhoComprasRepository
-import com.tiozao.cdd.loja.repository.CompradorRepository
-import com.tiozao.cdd.loja.repository.LivroRepository
+import com.tiozao.cdd.loja.repository.*
 import com.tiozao.cdd.loja.repository.entity.CarrinhoCompraEntity
 import com.tiozao.cdd.loja.repository.entity.CarrinhoCompraItemEntity
+import com.tiozao.cdd.loja.repository.entity.EstadoEntity
 import com.tiozao.cdd.loja.repository.extensions.toEntity
 import com.tiozao.cdd.loja.repository.extensions.toModel
 import org.hibernate.validator.internal.engine.ConstraintViolationImpl
@@ -28,13 +26,14 @@ class CarrinhoCompraService(
     private var carrinhoComprasRepository: CarrinhoComprasRepository,
     private var compradorRepository: CompradorRepository,
     private var livroRepository: LivroRepository,
+    private var paisRepository: PaisRepository,
+    private var estadoRepository: EstadoRepository,
     private var carrinhoCompraItemRepository: CarrinhoCompraItenRepository) {
 
     @Transactional
     fun createCarrinhoCompra(@Valid carrinho : CarrinhoCompraModel): CarrinhoCompraModel {
-        var compradorEntity = compradorRepository.findById(carrinho.idComprador!!).get()
 
-        var itens: MutableList<CarrinhoCompraItemEntity> = mutableListOf()
+       var itens: MutableList<CarrinhoCompraItemEntity> = mutableListOf()
         var total: BigDecimal = BigDecimal(0)
         for(item in carrinho.itens){
             var livro = livroRepository.findById(item.idLivro).get()
@@ -52,7 +51,13 @@ class CarrinhoCompraService(
         if(total != carrinho.total){
             throw InvalidAttributeValueException("valor total invalido.")
         }
-        var carrinhoEntity = carrinhoComprasRepository.save(carrinho.toEntity(compradorEntity, null))
+
+        var carrinhoEntity = carrinhoComprasRepository.save(carrinho.toEntity(compradorRepository.save(
+            carrinho.comprador.toEntity(
+                paisRepository.findById(carrinho.comprador.paisId).get(),
+                getEstado(carrinho.comprador.estadoId)
+            )
+        ), null))
         itens.forEach {
             it.carrinhoCompra = carrinhoEntity
             carrinhoCompraItemRepository.save(it)
@@ -60,4 +65,12 @@ class CarrinhoCompraService(
         carrinhoCompraItemRepository.saveAll(itens)
         return carrinhoEntity.copy(itens = itens ).toModel()
     }
+
+    private fun getEstado(estadoId: Int?) =
+        estadoId?.let {
+            estadoRepository.findById(estadoId).orElse(null)
+        }.run {
+            null
+        }
+
 }

@@ -19,9 +19,7 @@ class AutorService(private var autorRepository: AutorRepository) {
             .toModel()
     }
 
-    fun findAutor(autorId: Int): AutorModel {
-        autorRepository.findById(autorId)?.let { return it.get().toModel() }
-    }
-
+    fun findAutor(autorId: Int) =
+        autorRepository.findById(autorId).ifPresentOrElse( { it.toModel() },null)
 
 }

@@ -9,6 +9,5 @@ data class PaisEntity (
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Int?,
     var nome: String?,
-    @OneToMany
-    @JoinColumn(name = "pais_id")
-    var estados: MutableList<EstadoEntity> = mutableListOf() )
+    var hasEstado: Boolean)
+

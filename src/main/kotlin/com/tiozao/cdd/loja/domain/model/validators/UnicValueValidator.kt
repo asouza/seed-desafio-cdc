@@ -18,7 +18,7 @@ class UnicValueValidator: ConstraintValidator<UnicValue,String> {
     override fun initialize(constraintAnnotation: UnicValue?) {
         super.initialize(constraintAnnotation)
         fieldName = constraintAnnotation!!.fieldName
-        classTarget = constraintAnnotation!!.classTarget
+        classTarget = constraintAnnotation.classTarget
     }
 
     override fun isValid(value: String, context: ConstraintValidatorContext?): Boolean {

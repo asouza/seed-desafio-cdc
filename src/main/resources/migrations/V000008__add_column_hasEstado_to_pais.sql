@@ -1,0 +1,1 @@
+ALTER TABLE pais ADD has_estado BOOLEAN;

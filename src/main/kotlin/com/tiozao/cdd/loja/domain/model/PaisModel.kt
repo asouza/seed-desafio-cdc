@@ -7,5 +7,5 @@ data class PaisModel (
     var id: Int?,
     @UnicValue(classTarget = PaisEntity::class, fieldName = "nome")
     var nome: String?,
-    var estados: MutableList<EstadoModel> = mutableListOf()
+    var hasEstado: Boolean
     )

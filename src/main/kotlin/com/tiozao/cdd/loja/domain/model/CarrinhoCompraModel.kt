@@ -7,7 +7,7 @@ import javax.validation.constraints.NotNull
 data class CarrinhoCompraModel (
     var id: Int?,
     @field:NotNull
-    var idComprador: Int?,
+    var comprador: CompradorModel,
     @field:NotNull
     var total: BigDecimal?,
     @field:NotNull

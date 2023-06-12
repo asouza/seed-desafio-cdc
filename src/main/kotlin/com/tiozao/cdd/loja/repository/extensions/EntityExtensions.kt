@@ -71,16 +71,16 @@ fun LivroEntity.toModel(): LivroModel = LivroModel(
     instante = this.instante
 )
 
-fun PaisModel.toEntity() = PaisEntity(
+fun PaisModel.toEntity(hasEstado: Boolean) = PaisEntity(
     id = this.id,
     nome = this.nome,
-    estados = this.estados.map { it.toEntity() }.toMutableList()
+    hasEstado = hasEstado
 )
 
 fun PaisEntity.toModel() = PaisModel(
     id =this.id,
     nome = this.nome,
-    estados = this.estados.map { it.toModel() }.toMutableList()
+    hasEstado = this.hasEstado
 )
 
 fun EstadoEntity.toModel() = EstadoModel(
@@ -89,7 +89,8 @@ fun EstadoEntity.toModel() = EstadoModel(
     sigla = this.sigla,
     pais = PaisModel(
         id = this.pais.id,
-        nome = this.pais.nome )
+        nome = this.pais.nome,
+        hasEstado = true )
 )
 
 fun EstadoModel.toEntity() = EstadoEntity(
@@ -98,7 +99,8 @@ fun EstadoModel.toEntity() = EstadoEntity(
     sigla = this.sigla,
     pais = PaisEntity(
         id = this.pais?.id,
-        nome = this.pais?.nome )
+        nome = this.pais?.nome,
+        hasEstado = true )
 )
 
 fun CompradorEntity.toModel() = CompradorModel(
@@ -147,7 +149,7 @@ fun CarrinhoCompraEntity.toModel() = CarrinhoCompraModel(
         idLivro = it.livro.id!!,
         quantidade = it.quantidade,
     )}.toMutableList(),
-    idComprador = this.comprador.id
+    comprador = this.comprador.toModel()
 )
 
 fun CupomModel.toEntity() = CupomEntity(
