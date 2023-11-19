@@ -1,13 +1,13 @@
-package cv.hexadus.lojalivros;
+package cv.hexadus.seeddesafiocdc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LojaLivrosApplication {
+public class SeedDesafioCdcApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LojaLivrosApplication.class, args);
+		SpringApplication.run(SeedDesafioCdcApplication.class, args);
 	}
 
 }

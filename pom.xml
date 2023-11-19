@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>cv.hexadus</groupId>
-	<artifactId>loja-livros</artifactId>
+	<artifactId>seed-desafio-cdc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>loja-livros</name>
-	<description>loja-livros</description>
+	<name>seed-desafio-cdc</name>
+	<description>seed-desafio-cdc</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
