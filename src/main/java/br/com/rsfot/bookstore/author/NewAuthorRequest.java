@@ -12,11 +12,8 @@ public record NewAuthorRequest(
         @Email
         String email,
         @Size(max = 400)
-        String description,
-        @NotNull
-        @JsonFormat(pattern = "dd/MM/yyyy HH:mm:ss")
-        LocalDateTime createdAt) {
+        String description) {
     public Author toModel() {
-        return new Author(name, email, description, createdAt);
+        return new Author(name, email, description);
     }
 }
