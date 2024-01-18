@@ -15,13 +15,14 @@ public class AuthorController {
     }
 
     @Transactional
-    @PostMapping(path = "/author", consumes = "application/json")
-    ResponseEntity<String> create(@Valid @RequestBody NewAuthorRequest newAuthorRequest, BindingResult bindingResult) {
-        if (bindingResult.hasErrors())
-            return ResponseEntity.badRequest().body(bindingResult.getModel().toString());
+    @PostMapping(path = "/authors", consumes = "application/json")
+    ResponseEntity<String> create(@Valid @RequestBody NewAuthorRequest newAuthorRequest) {
+//        if (bindingResult.hasErrors())
+//            return ResponseEntity.badRequest().build();
+//        if (authorRepository.existsByEmail(newAuthorRequest.email()))
+//            return ResponseEntity.badRequest().body("Email already exists");
 
-        if (authorRepository.existsByEmail(newAuthorRequest.email()))
-            return ResponseEntity.badRequest().body("Email already exists");
+
 
         Author author = newAuthorRequest.toModel();
         authorRepository.save(author);
