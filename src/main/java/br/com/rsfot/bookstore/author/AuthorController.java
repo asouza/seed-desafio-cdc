@@ -18,7 +18,7 @@ public class AuthorController {
     @PostMapping(path = "/authors", consumes = "application/json")
     ResponseEntity<NewAuthorResponse> create(@Valid @RequestBody NewAuthorRequest newAuthorRequest) {
         if (authorRepository.existsByEmail(newAuthorRequest.email())) {
-            throw new EmailDuplicatedException();
+            throw new EmailDuplicatedException(newAuthorRequest.email());
         }
 
         Author author = newAuthorRequest.toModel();
