@@ -4,10 +4,12 @@ import jakarta.validation.constraints.*;
 
 public record NewAuthorRequest(
         @NotBlank
+        @Size(min = 3, max = 100)
         String name,
         @NotNull
         @Email
         String email,
+        @NotBlank
         @Size(max = 400)
         String description) {
     public Author toModel() {
