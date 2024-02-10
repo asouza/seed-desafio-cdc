@@ -29,4 +29,9 @@ public class ApiExceptionHandler {
         return ResponseEntity.badRequest().body(exception.getMessage());
     }
 
+    @ExceptionHandler(CategoryDuplicatedException.class)
+    public ResponseEntity<String> handleCategoryDuplicatedException(CategoryDuplicatedException exception) {
+        return ResponseEntity.badRequest().body(exception.getMessage());
+    }
+
 }
