@@ -1,0 +1,248 @@
+openapi: 3.0.3
+info:
+  title: Author API Specification for authors operations
+  description: |-
+    A simple author API that allows the operations below:
+    - create a new author
+  version: 1.0.0
+servers:
+  - description: Localhost
+    url: https://localhost:8887/api/v1
+tags:
+  - name: authors
+    description: Manages information of book authors
+paths:
+  /author:
+    post:
+      tags:
+        - authors
+      summary: Creates a new author
+      description: Creates a new author
+      operationId: create
+      requestBody:
+        description: New author informations
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewAuthor'
+        required: true
+      responses:
+        200:
+          $ref: '#/components/responses/AuthorCreated'
+        400:
+          $ref: '#/components/responses/BadRequest'
+        401:
+          $ref: '#/components/responses/Unauthorized'
+        403:
+          $ref: '#/components/responses/Forbidden'
+        413:
+          $ref: '#/components/responses/ContentTooLarge'
+        415:
+          $ref: '#/components/responses/UnsupportedMediaType'
+        422:
+          $ref: '#/components/responses/UnprocessableContent'
+        429:
+          $ref: '#/components/responses/TooManyRequests'
+        500:
+          $ref: '#/components/responses/InternalServerError'
+        502:
+          $ref: '#/components/responses/BadGatewayError'
+        503:
+          $ref: '#/components/responses/ServiceUnavailableError'
+        504:
+          $ref: '#/components/responses/GatewayTimeoutError'
+components:
+  responses:
+    AuthorCreated:
+      description: Shows detailed informations of a new author created.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/AuthorResponse'
+    BadRequest:
+      description: Invalid Request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/InternalError'
+          example:
+            code: "400.001"
+            message: "Constraint validation failed"
+            description: "Detailed error description"
+    Unauthorized:
+      description: |
+        The request has not been completed because it lacks valid authentication credentials for the requested resource.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/InternalError'
+          example:
+            message: Unauthorized
+            description: Invalid or expired token
+    Forbidden:
+      description: |
+        The request has not been completed because it lacks valid permissions for the requested resource.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/InternalError'
+          example:
+            message: "Forbidden"
+            description: "The authentication credentials provided in the request are insufficient to grant access to the resource"
+    NotFound:
+      description: Shopping cart not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/InternalError'
+          example:
+            message: "Shopping cart not found"
+            description: "Shopping cart not found for provided identifier"
+    UnsupportedMediaType:
+      description: |
+        The server refuses to accept the request because the payload format is in an unsupported format
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/InternalError'
+          example:
+            message: Unsupported Media Type
+            description: "The payload is in a format not supported by this method on the target resource"
+    ContentTooLarge:
+      description: |
+        The request entity is larger than limits defined by server
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/InternalError'
+          example:
+            message: "Content Too Large"
+            description: "The request payload is larger than the server is willing or able to process"
+    UnprocessableContent:
+      description: |
+        The server understands the content type of the request entity, and the syntax of the request entity is correct, but it was unable to process the contained instructions.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/InternalError'
+          example:
+            code: "422.001"
+            message: "Unprocessable Content"
+            description: "Detailed error description"
+    TooManyRequests:
+      description: |
+        The consumer has sent too many requests in a given amount of time ("rate limiting").
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/InternalError'
+          example:
+            message: "Too many requests"
+            description: "Too many requests were sent, exceeding the limit that the server can process"
+    InternalServerError:
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/InternalError'
+          example:
+            message: "Internal Server Error"
+            description: The server encountered an unexpected condition that prevented it from fulfilling the request.
+    BadGatewayError:
+      description: Bad Gateway
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/InternalError'
+          example:
+            message: "Bad gateway"
+            description: The server, while acting as a gateway or proxy, received an invalid response from the upstream server.
+    ServiceUnavailableError:
+      description: Service Unavailable
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/InternalError'
+          example:
+            message: "Service Unavailable"
+            description: The server is not ready to handle the request.
+    GatewayTimeoutError:
+      description: Gateway Timeout
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/InternalError'
+          example:
+            message: "Gateway timeout"
+            description: The server, while acting as a gateway or proxy, did not get a response in time from the upstream server that it needed in order to complete the request.
+  schemas:
+    AuthorResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 1
+        name:
+          type: string
+          description: The author's name.
+          example: Gustavo
+        email:
+          type: string
+          description: The author's e-mail.
+          example: guga@gmail.com
+        description:
+          type: string
+          example: |-
+            Gustavo wrotes many books of love and death, spirituality and empathy .
+          description: A short description about author
+        createdAt:
+          type: string
+          description: author creation instant
+          format: date-time
+          example: '2024-12-22T18:03:39'
+    NewAuthor:
+      type: object
+      required:
+        - name
+        - email
+        - description
+      properties:
+        name:
+          type: string
+          description: The author's name.
+          example: Gustavo
+          x-field-extra-annotation: "@jakarta.validation.constraints.NotEmpty"
+        email:
+          type: string
+          description: The author's e-mail
+          format: email
+          example: guga@gmail.com
+          minLength: 6  # Optional: minimum length for email
+          maxLength: 30  # Optional: maximum length for email
+        description:
+          type: string
+          example: |-
+            Gustavo wrotes many books of love and death, spirituality and empathy .
+          description: A short description about author
+          minLength: 3
+          maxLength: 400
+    InternalError:
+      description: Entity representing error information that occurred in the backend.
+      type: object
+      required:
+        - message
+        - description
+      properties:
+        code:
+          type: string
+          example: "400.001"
+          description: Error code
+        message:
+          type: string
+          example: Here is a summarized error message
+          description: Error message
+        description:
+          type: string
+          example: Here is some detailed error message
+          description: Detailed error message
