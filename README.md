@@ -1,5 +1,42 @@
-# Faça um fork desse repositório
+# Seed Desafio CDC
 
-Este é um repositório vazio de propósito. A ideia é que você faça um fork para que eu, Alberto, possa usar o github para ter a chance de olhar vários dos códigos produzido por você e seus(as) colegas da Jornada Dev Eficiente :). 
+Este projeto é uma solução para o desafio CDC, desenvolvido em node/express.
 
-Durante cada uma das seis semanas eu vou pegar código por amostragem e analisar. Feito isso, vou criar um vídeo anonimizando a pessoa que é dona do código, com as minhas observações e postar isso como material de suporte da funcionalidade :). 
+## Como executar
+
+1. Clone o repositório:
+  ```bash
+  git clone url-repositorio
+  cd seed-desafio-cdc
+  ```
+2. Instale as dependências:
+  ```bash
+  npm install
+  ```
+3. Compile o projeto:
+  ```bash
+  npm run build
+  ```
+4. Execute o projeto:
+  ```bash
+  npm start
+  ```
+
+## Estrutura do Projeto
+
+- `src/` — Código-fonte principal
+- `tests/` — Testes automatizados
+
+## Como contribuir
+
+1. Fork este repositório
+2. Crie uma branch (`git checkout -b feature/nova-feature`)
+3. Commit suas alterações (`git commit -am 'Adiciona nova feature'`)
+4. Push para a branch (`git push origin feature/nova-feature`)
+5. Abra um Pull Request
+
+## Licença
+
+[MIT](LICENSE)
+
+---

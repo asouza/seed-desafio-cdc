@@ -1,0 +1,38 @@
+{
+  "name": "seed-desafio-cdc",
+  "version": "1.0.0",
+  "description": "Este é um repositório vazio de propósito. A ideia é que você faça um fork para que eu, Alberto, possa usar o github para ter a chance de olhar vários dos códigos produzido por você e seus(as) colegas da Jornada Dev Eficiente :).",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinicius-ferreiras/seed-desafio-cdc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinicius-ferreiras/seed-desafio-cdc/issues"
+  },
+  "homepage": "https://github.com/vinicius-ferreiras/seed-desafio-cdc#readme",
+  "dependencies": {
+    "@prisma/client": "^6.10.1",
+    "express": "^5.1.0",
+    "joi": "^17.13.3",
+    "prisma": "^6.10.1",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.0.3",
+    "@types/supertest": "^6.0.3",
+    "jest": "^30.0.2",
+    "supertest": "^7.1.1",
+    "ts-jest": "^29.4.0"
+  }
+}
