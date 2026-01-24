@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace LojaLivrosVirtual.Controllers;
 
-[Route("api/[controller]")]
+[Route("[controller]")]
 [ApiController]
 public class AuthorController : ControllerBase
 {
