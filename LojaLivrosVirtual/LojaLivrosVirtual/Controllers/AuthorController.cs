@@ -1,6 +1,8 @@
 ﻿using LojaLivrosVirtual.DTOs.Author;
 using LojaLivrosVirtual.Entities;
+using LojaLivrosVirtual.Infrastructure.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace LojaLivrosVirtual.Controllers;
 
@@ -8,6 +10,13 @@ namespace LojaLivrosVirtual.Controllers;
 [ApiController]
 public class AuthorController : ControllerBase
 {
+    private readonly IAuthorRepository _authorRepository;
+
+    public AuthorController(IAuthorRepository authorRepository)
+    {
+        _authorRepository = authorRepository;
+    }
+
     // GET: api/<AuthorController>
     [HttpGet]
     public IEnumerable<string> Get()
@@ -16,9 +25,12 @@ public class AuthorController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult Post([FromBody] AuthorRequest request)
+    public async Task<IActionResult> Post([FromBody] AuthorRequest request)
     {
         var author = new Author(request.Name, request.Email, request.Description);
+
+        await _authorRepository.CreateAsync(author);
+
         return Ok(author);
     }
 }

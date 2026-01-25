@@ -2,11 +2,11 @@
 {
     public class Author
     {   
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
         public string Description { get; set; }
-        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime CreateDate { get; set; } = DateTime.Now;
         public bool DeletedDate { get; set; }
 
         public Author(string name, string email, string description)
@@ -25,9 +25,11 @@
                 throw new ArgumentException("Description cannot have more then 400 caracteres", nameof(name));
             }
 
+            Id = Guid.NewGuid();
             Name = name;
             Email = email;
             Description = description;
+            
         }
     }
 }
