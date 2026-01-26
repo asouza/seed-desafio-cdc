@@ -1,4 +1,6 @@
-﻿namespace LojaLivrosVirtual.Entities
+﻿using LojaLivrosVirtual.Helpers;
+
+namespace LojaLivrosVirtual.Entities
 {
     public class Author
     {   
@@ -8,6 +10,7 @@
         public string Description { get; set; }
         public DateTime CreateDate { get; set; } = DateTime.Now;
         public bool DeletedDate { get; set; }
+        public string NormalizedEmail { get; private set; }
 
         public Author(string name, string email, string description)
         {
@@ -29,7 +32,8 @@
             Name = name;
             Email = email;
             Description = description;
-            
+            NormalizedEmail = email.RemoveAccents();
+
         }
     }
 }

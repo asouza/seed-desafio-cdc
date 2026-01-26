@@ -22,6 +22,8 @@ namespace LojaLivrosVirtual.Context
                 entity.Property(e => e.Description).HasMaxLength(400);
                 entity.Property(e => e.CreateDate);
                 entity.Property(e => e.DeletedDate);
+                entity.Property(e => e.NormalizedEmail);
+
             });
         }
     }
