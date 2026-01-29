@@ -2,7 +2,7 @@
 
 namespace LojaLivrosVirtual.DTOs.Author
 {
-    public class AuthorRequest
+    public class AuthorRequestDTO
     {
         [Required(ErrorMessage = "Name is required.")]
         public string Name { get; set; }

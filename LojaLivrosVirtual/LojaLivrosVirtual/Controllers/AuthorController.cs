@@ -23,7 +23,7 @@ public class AuthorController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Post([FromBody] AuthorRequest request)
+    public async Task<IActionResult> Post([FromBody] AuthorRequestDTO request)
     {
         var author = new Author(request.Name, request.Email, request.Description);
 
