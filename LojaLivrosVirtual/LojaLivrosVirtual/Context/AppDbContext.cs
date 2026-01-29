@@ -10,6 +10,7 @@ namespace LojaLivrosVirtual.Context
         }
 
         public DbSet<Author> Authors { get; set; }
+        public DbSet<Category> Categories { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -24,6 +25,13 @@ namespace LojaLivrosVirtual.Context
                 entity.Property(e => e.DeletedDate);
                 entity.Property(e => e.NormalizedEmail);
 
+            });
+
+            modelBuilder.Entity<Category>(entity =>
+            {
+                entity.Property(e => e.Id).HasColumnName("CategoryId");
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.Name).IsRequired().HasMaxLength(200);
             });
         }
     }
