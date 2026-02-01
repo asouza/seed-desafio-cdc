@@ -16,7 +16,7 @@ namespace LojaLivrosVirtual.Controllers
             _categoryRepository = categoryRepository;
         }
 
-        [HttpPost("categories")]
+        [HttpPost]
         public async Task<IActionResult> CreateAsync([FromBody] CategoryRequestDTO request)
         {
             var category = new Category(request.Name);
